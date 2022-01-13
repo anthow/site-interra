@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  html,
+body {
+	height: 100%;
+  font-family: oxygen;
+
+}
+
+body,p,a {
+  font-family: oxygen;
+
+}
+
+.fullheader{
+  width:100% !important
+}
+
+.paragraphe p{
+  margin-bottom: 10px;
+}
+
+
+
+
+p{
+  font-size: 1.05em;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: roboto;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  p{
+    font-size: 1em;
+  }
+}
+
