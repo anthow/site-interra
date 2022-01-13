@@ -1734,7 +1734,7 @@ const DecouvrirPage = ({
   className: "font-black text-4xl mt-10 md:mt-0 mb-10 md:mb-20 text-vert-interra  bg-white text-center ",
   id: "adn"
 }, " ", data.datoCmsDecouvrirInterra.titreAdn), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-  className: "md:grid grid-cols-2  mb-10"
+  className: "md:grid grid-cols-2 space-x-10  mb-10"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("figure", {
   className: "row-span-2"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.GatsbyImage, {
