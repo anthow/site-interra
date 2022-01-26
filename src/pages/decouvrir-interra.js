@@ -14,10 +14,12 @@ const DecouvrirPage = ({ data }) => (
         <Seo title="Découvrir Interra" />
         <div className="w-12/12">
             <article className="w-10/12  m-auto">
-                <h1 className="font-black text-4xl mt-10 md:mt-0 mb-10 md:mb-20 text-vert-interra  bg-white text-center " id="adn"> {data.datoCmsDecouvrirInterra.titreAdn}</h1>
-                <section className="md:grid grid-cols-2 space-x-10  mb-10">
+                <h1 className="font-black text-4xl mt-10 md:mt-0 mb-10 md:mb-20 text-vert-interra  bg-white text-center " id="adn">
+                     {data.datoCmsDecouvrirInterra.titreAdn}</h1>
+                <section className="md:grid grid-cols-2 md:space-x-10  mb-10">
                     <figure className="row-span-2">
-                        <GatsbyImage image={data.datoCmsDecouvrirInterra.imageAdn.gatsbyImageData} alt={data.datoCmsDecouvrirInterra.imageAdn.alt} className=" h-min mb-5 md:mb-0" />
+                        <GatsbyImage image={data.datoCmsDecouvrirInterra.imageAdn.gatsbyImageData}
+                         alt={data.datoCmsDecouvrirInterra.imageAdn.alt} className=" h-min mb-5 md:mb-0" />
 
                     </figure>
                     <div>
@@ -38,8 +40,9 @@ const DecouvrirPage = ({ data }) => (
                     </div>
                 </section>
                 </article>
-                <section className="w-12/12  md:w-6/12 bg-orange-interra py-1  text-white  m-auto  md:my-10">
-                <div dangerouslySetInnerHTML={{ __html: data.datoCmsDecouvrirInterra.listeDeuxConstats }} className="w-12/12"></div>
+                <section className="w-12/12  md:w-10/12 bg-orange-interra py-10  m-auto text-white">
+                <div dangerouslySetInnerHTML={{ __html: data.datoCmsDecouvrirInterra.introductionListeConstat }} className="text-center text-xl w-10/12 m-auto"></div>
+                <div dangerouslySetInnerHTML={{ __html: data.datoCmsDecouvrirInterra.listeDeuxConstats }} className="text-xl text-center"></div>
 
                 </section>
                 <article className="w-10/12  m-auto">
@@ -123,6 +126,7 @@ export const query = graphql`
         gatsbyImageData
       }
       deuxConstats
+      introductionListeConstat
       listeDeuxConstats
       listeLien
       listeValeurs

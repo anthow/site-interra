@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -35,11 +35,12 @@ const FormationPage = ({ data }) => (
                 </section>
                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsFormationInterculturelle.texteTroisOrganiser }} className="paragraphe"></div>
 
-                <h2 className="font-black text-3xl mt-20 mb-10 text-vert-interra text-center"> {data.datoCmsFormationInterculturelle.titrePourLesEntreprises}</h2>
-                <div dangerouslySetInnerHTML={{ __html: data.datoCmsFormationInterculturelle.texteUnPourLesEntreprises }} className="paragraphe"></div>
-                <section className="flex space-x-5">
-                <button className=" mt-5 text-white font-black  p-1 px-2  bg-vert-interra hover:opacity-80 rounded"> Contactez nous </button>
-                <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> Je veux soutenir le projet </button>
+                <section className="flex space-x-5"> <Link to="../contact">
+                <button className=" mt-5 text-white font-black  p-1 px-2  bg-vert-interra hover:opacity-80 rounded">
+                     Contactez nous </button></Link>
+                     <Link to="../devenir-membre">
+                <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> 
+                Je veux soutenir le projet </button></Link>
 
                 </section>
 
@@ -60,11 +61,8 @@ export const query = graphql`
       texteDeuxOrganiser
       texteTroisOrganiser
       texteUnOrganiser
-      texteUnPourLesEntreprises
-      texteDeuxPourLesEntreprises
       titre
       titreOrganiser
-      titrePourLesEntreprises
     }
   }
 

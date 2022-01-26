@@ -12,14 +12,14 @@ const Duopage = ({ data }) => (
         <Layout className="">
                 <Seo title="Agir avec nous " />
                 <div className="w-12/12">
-                        <article className="md:w-8/12   mt-10 flex flex-col space-y-20   m-auto">
+                        <article className="md:w-8/12   mt-10 flex flex-col space-y-40   m-auto">
                                 <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center" id="don"> Agir avec nous </h1>
 
 
                                 <section className=" bg-vert-interra  flex flex-col md:flex-row  justify-around">
 
-                                        <div className="p-10 order-2 md:order-1  flex-grow-0 ">
-                                                <h2 className=" mb-2 mb-10 text-white font-black text-3xl"> {data.datoCmsAgirAvecNou.titreDon} </h2>
+                                        <div id="don" className= "p-10  order-2 md:order-1  flex-grow-0 ">
+                                                <h2 className="  mb-10 text-white font-black text-3xl"> {data.datoCmsAgirAvecNou.titreDon} </h2>
                                                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsAgirAvecNou.texteDon }} ></div>
                                                 <p className="mt-10 text-white font-black">{data.datoCmsAgirAvecNou.numRoDeCompte}</p>
                                         </div>
