@@ -11,22 +11,22 @@ const Slidepartenaire = () => (
     datoCmsDecouvrirInterra {
           imagesNosPartenaires {
             alt
-            gatsbyImageData (width:150)
+            gatsbyImageData (width:250)
       }
     }
   }
 `}
     render={data => 
-      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 items-center">
+
+
+      
+      <div className="flex overflow-x-auto   space-x-5">
+
 
 {data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(pic => 
-  <li className="self-center">
 
-<figure className="">
                 
-                <GatsbyImage image={pic.gatsbyImageData} className={pic.alt} />
-                </figure>
-                </li>
+                <GatsbyImage image={pic.gatsbyImageData} className="self-center"  />
             
             )}
 
@@ -34,12 +34,14 @@ const Slidepartenaire = () => (
 
 
 
-</ul>
+</div>
         
                 
   
         
      }
+
+     
   ></StaticQuery>
 )
 
