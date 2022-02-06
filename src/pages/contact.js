@@ -9,7 +9,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const Contact = ({ data }) => (
   <Layout className="">
     <Seo title="Contact " />
-    <div className="w-12/12">
+    <div className="w-10/12 m-auto">
       <article className=" mt-10 flex flex-col space-y-20   m-auto">
         <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center"> Contact </h1>
         <section className="  md:grid grid-cols-3   gap-x-10 gap-y-20" >
@@ -137,7 +137,8 @@ export const query = graphql`
           nomPrNom
           numRoDeTLPhone
           photo {
-            gatsbyImageData
+            gatsbyImageData( width:250
+              height:400)
             alt
           }
           adresseMail
