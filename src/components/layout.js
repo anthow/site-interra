@@ -11,10 +11,10 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./footer"
 
-
 const Layout = ({ children }) => {
 
   return (
+    
     <>
     <div className=" min-h-screen flex flex-col h-screen">
     <section className=" fullheader w-12/12 m-auto fixed bg-white z-50 font-sans">
