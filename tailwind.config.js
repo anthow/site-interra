@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [ './public/**/*.html',    './src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -10,6 +10,7 @@ module.exports = {
       }
     },
   },
+  darkMode: false,
   variants: {
     extend: {
       order: ['odd'],
