@@ -62,7 +62,7 @@ data.allDatoCmsAgendaRegule.edges.map(({ node }) => {
       </article>
 
 
-      <h1 className="font-black text-3xl text-center text-orange-interra my-20 ">Nos événements réguliers </h1>
+      <h1 className="font-black text-3xl text-center text-orange-interra my-20 ">Nos événements occasionels </h1>
       <article className="w-10/12  mt-10   m-auto">
 
         <div className="flex flex-col md:grid grid-cols-3 gap-x-20">
