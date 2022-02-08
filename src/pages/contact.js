@@ -51,7 +51,6 @@ const Contact = ({ data }) => (
                 <div className="px-4 py-5 bg-white sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6 sm:col-span-3">
-                    <input type="text" name="_gotcha" style="display:none" />
                       <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                         Prénom</label>
                       <input

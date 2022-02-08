@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { StaticImage } from "gatsby-plugin-image"
 
 
 const interlabPage = ({ data }) => (

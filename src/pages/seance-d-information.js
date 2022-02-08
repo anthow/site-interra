@@ -2,8 +2,6 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { StaticImage } from "gatsby-plugin-image"
 
 
 const seanceInformation = ({ data }) => (

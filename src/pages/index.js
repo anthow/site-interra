@@ -1,9 +1,8 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage} from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Slidehome from "../components/silders/slider-home"
 
