@@ -15,15 +15,15 @@ const NavbarLinks = () => {
             </Link></li>
             <Link to="/agir-avec-nous/#don">
           <li className=" text-white bg-vert-interra font-black
-            p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra 
+            p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 
             hover:bg-white border hover:border-vert-interra">Faire un don</li>
           </Link >
           <Link to="/agir-avec-nous/#membre">
-          <li className=" text-white bg-orange-interra font-black  
+          <li className=" text-white bg-orange-interra text-center mb-2 md:mb-0 font-black  
           p-1 px-2  rounded hover:bg-white-interra hover:text-orange-interra 
           hover:bg-white border hover:border-orange-interra ">Devenir membre</li>
           </Link>
-          <li className="w-auto text-center mb-2 md:mb-0  m-auto">
+          <li className="w-auto mb-2 md:mb-0  text-center mb-2 md:mb-0  m-auto">
             <a href="https://api.whatsapp.com/send?phone=0032491520520" rel="noreferrer" target="_blank" >
 <figure className="">
                 <StaticImage
@@ -66,7 +66,7 @@ const NavbarLinks = () => {
                 <Link to="/decouvrir-interra">
                   Découvrir Interra
                 </Link>
-                <svg class="fill-current h-4 w-4 mr-1" 
+                <svg     class="fill-current h-4 w-4 mr-1" 
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                   <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
               </button>
@@ -84,7 +84,7 @@ const NavbarLinks = () => {
                 </Link>
                 <Link to="/decouvrir-interra/#partenaires">
 
-                  <li className="hover:text-yellow-500 text-center mb-2"> Nos partenaires</li>
+                  <li className=  "hover:text-yellow-500 text-center mb-2"> Nos partenaires</li>
                 </Link>
 
               </ul>
@@ -114,13 +114,13 @@ const NavbarLinks = () => {
               </ul>
             </div>
           </li>
-          <Link to="/agenda">
+          <Link to="/agenda" className="hidden">
           <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 "> Agenda </li>
           </Link>
           <li className="text-center mb-2">
             <div class="dropdown inline-block relative">
               <button class="  hover:text-yellow-500 text-center mb-2 md:mb-0   rounded inline-flex items-center">
-                <Link to="/agir-avec-nous">
+                <Link to="/a    gir-avec-nous">
                   Agir avec nous              </Link>
                 <svg class="fill-current h-4 w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
               </button>
@@ -156,4 +156,4 @@ const NavbarLinks = () => {
   )
 }
 
-export default NavbarLinks
+export default NavbarLinks  

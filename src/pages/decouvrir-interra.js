@@ -1,10 +1,8 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Listprojet from "../components/listprojets"
 import Sliderpartenaire from "../components/silders/slider-partenaire"
 
 

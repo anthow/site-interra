@@ -18,9 +18,9 @@ const Slidepartenaire = () => (
 `}
     render={data => 
 
-
+<>
       
-      <div className="flex overflow-x-auto   space-x-5">
+      <div className="md:flex flex-nowrap     space-x-5">
 
 
 {data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(pic => 
@@ -35,9 +35,8 @@ const Slidepartenaire = () => (
 
 
 </div>
-        
-                
-  
+            
+</>
         
      }
 

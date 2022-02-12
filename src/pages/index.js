@@ -256,7 +256,7 @@ const IndexPage = ({ data }) => (
             className="order-1"
           />
         </figure>
-        <Link to="../agenda">
+        <Link to="../agenda" className="hidden">
           <button className=" m-auto text-white text-center font-black bg-vert-interra font-black md:ml-10 p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra   mb-2 md:mb-0  ">
             Nos prochains événements
           </button>
