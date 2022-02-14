@@ -17,6 +17,12 @@ module.exports = {
     'gatsby-plugin-robots-txt',
 
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'fr'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
