@@ -22,6 +22,19 @@ module.exports = {
         lang: 'fr'
       }
     },
+
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId:  "n_op1k6ATqawCzmM3CtxpA",
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true, // https://github.com/andrezimpel/gatsby-plugin-gdpr-cookies#anonymize
+          allowAdFeatures: false,
+        },
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -127,7 +140,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: " n_op1k6ATqawCzmM3CtxpA",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
