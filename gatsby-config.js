@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Interra`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@Anthony Englebert`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Interra veut permettre plus d’interactions entre les personnes récemment arrivées en terre liégeoise et la population locale. Nous voulons créer des opportunités de rencontre de manière participative et innovante`,
+    author: `@Interra`,
+    language:"fr",
+    siteUrl: `https://www.interra-asbl.be/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +19,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-      
+    `gatsby-plugin-open-graph-images`,      
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -102,12 +103,12 @@ module.exports = {
         name: `Interra`,
         short_name: `Interra`,
         start_url: `/`,
-        background_color: `#663399`,
+        //background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/interra-logo-300x300.jpeg`, // This path is relative to the root of the site.
+        icon: `src/images/interra-logo-300x300-removebg.png`, // This path is relative to the root of the site.
       },
     },
     {
