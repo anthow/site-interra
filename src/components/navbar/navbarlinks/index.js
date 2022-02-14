@@ -127,7 +127,7 @@ const NavbarLinks = () => {
               <ul class="dropdown-menu absolute hidden z-50 bg-white  text-gray-700  p-4 pt-3">
                 <Link to="/agir-avec-nous/#don">
 
-                  <li className="hover:text-yellow-500 text-center mb-2 ">  faire un don </li>
+                  <li className="hover:text-yellow-500 text-center mb-2 ">  Faire un don </li>
                 </Link>
                 <Link to="/agir-avec-nous/#membre">
                   <li className="hover:text-yellow-500 text-center mb-2 "> Devenir membre  </li>
@@ -139,7 +139,7 @@ const NavbarLinks = () => {
                   <li className="hover:text-yellow-500 text-center mb-2"> Devenir talent Interra </li>
                 </Link>
                 <Link to="/agir-avec-nous/#duo">
-                  <li className="hover:text-yellow-500 text-center mb-2"> former un Duo langue </li>
+                  <li className="hover:text-yellow-500 text-center mb-2"> Former un Duo  </li>
                 </Link>
 
 
