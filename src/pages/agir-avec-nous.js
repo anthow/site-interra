@@ -11,7 +11,7 @@ const Duopage = ({ data }) => (
         <Layout className="">
                 <Seo title="Agir avec nous " />
                 <div className="w-12/12">
-                        <article className="md:w-8/12   mt-10 flex flex-col space-y-40   m-auto">
+                        <article className="md:w-8/12  flex flex-col space-y-40   m-auto">
                                 <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center" id="don"> Agir avec nous </h1>
 
 
@@ -23,16 +23,16 @@ const Duopage = ({ data }) => (
                                                 <p className="mt-10 text-white font-black">{data.datoCmsAgirAvecNou.numRoDeCompte}</p>
                                         </div>
 
-                                        <GatsbyImage image={data.datoCmsAgirAvecNou.imageDon.gatsbyImageData} alt={data.datoCmsAgirAvecNou.imageDon.alt} className="h-max order-1 md:order-2 justify-self-end  w-full    " />
+                                        <GatsbyImage  image={data.datoCmsAgirAvecNou.imageDon.gatsbyImageData} alt={data.datoCmsAgirAvecNou.imageDon.alt} className="h-max order-1 md:order-2 justify-self-end  w-full    " />
 
 
                                 </section>
 
 
+                                <div id="membre"></div>
 
 
-
-                                <section className=" bg-orange-interra  flex flex-col md:flex-row  justify-around" id="membre">
+                                <section className=" bg-orange-interra  flex flex-col md:flex-row  justify-around" >
                                         <GatsbyImage image={data.datoCmsAgirAvecNou.imageMembre.gatsbyImageData} alt={data.datoCmsAgirAvecNou.imageMembre.alt} className="h-max  justify-self-end  w-full    " />
 
 
@@ -42,7 +42,7 @@ const Duopage = ({ data }) => (
                                                 <p className="mt-10 text-white font-black">{data.datoCmsAgirAvecNou.accrocheMembre}</p>
                                                 <Link to="/devenir-membre">
 
-                                                        <button className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90"> Devenir membre </button>
+                                                        <button id="" className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90"> Devenir membre </button>
                                                 </Link>
                                         </div>
 
@@ -51,9 +51,10 @@ const Duopage = ({ data }) => (
                                 </section>
 
 
+                                <div id="benevole"></div>
 
 
-                                <section className=" bg-vert-interra  flex flex-col md:flex-row  justify-around" id="benevole">
+                                <section className=" bg-vert-interra  flex flex-col md:flex-row  justify-around" >
 
                                         <div className="p-10 order-2 md:order-1  flex-grow-0 ">
                                                 <h2 className=" mb-2 mb-10 text-white font-black text-3xl"> {data.datoCmsAgirAvecNou.titreBNVole} </h2>
@@ -69,8 +70,9 @@ const Duopage = ({ data }) => (
 
                                 </section>
 
+                                <div id="talent"></div>
 
-                                <section className=" bg-orange-interra  flex flex-col md:flex-row  justify-around" id="talent">
+                                <section className=" bg-orange-interra  flex flex-col md:flex-row  justify-around" id="">
                                         <GatsbyImage image={data.datoCmsAgirAvecNou.imageTalent.gatsbyImageData} alt={data.datoCmsAgirAvecNou.imageTalent.alt} className="h-max  justify-self-end  w-full    " />
 
 
@@ -89,16 +91,17 @@ const Duopage = ({ data }) => (
 
                             
 
+                                <div id="duo"></div>
 
 
-                                <section className=" bg-vert-interra  flex flex-col md:flex-row  justify-around" id="duo">
+                                <section className=" bg-vert-interra  flex flex-col md:flex-row  justify-around" id="">
 
                                         <div className="p-10 order-2 md:order-1  flex-grow-0 ">
                                                 <h2 className=" mb-2 mb-10 text-white font-black text-3xl"> {data.datoCmsAgirAvecNou.titreDuoLangue} </h2>
                                                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsAgirAvecNou.texteDuoLangue }} ></div>
                                                 <Link to="/former-duo-langue">
 
-                                                <button className="mt-10 bg-white text-vert-interra font-black p-2 hover:opacity-90">     Former un duo-langue  </button>
+                                                <button className="mt-10 bg-white text-vert-interra font-black p-2 hover:opacity-90">     Former un duo </button>
                                                 </Link>
                                         </div>
 
