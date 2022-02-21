@@ -20,13 +20,14 @@ const Slidepartenaire = () => (
 
 <>
       
-      <div className="md:flex flex-nowrap     space-x-5">
+      <div className="flex flex-col md:flex-row   md:flex-nowrap   w-12/12  items-center  gap-x-5">
 
 
 {data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(pic => 
 
-                
-                <GatsbyImage image={pic.gatsbyImageData} className="self-center"  />
+                <figure className="md:w-12/12 w-1/2 m-auto mb-8 md:m-0 self-center ">
+                <GatsbyImage image={pic.gatsbyImageData} className="  "  />
+                </figure>
             
             )}
 
