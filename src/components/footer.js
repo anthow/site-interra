@@ -78,15 +78,15 @@ const Footer = () => (
         </li>
 
         <li className="self-center">
-          <a href="https://www.crelan.be/fr/particuliers/article/crelan-foundation" rel="noreferrer" target="_blank" >
+          <a href="https://www.cera.coop/fr/Particuliers" rel="noreferrer" target="_blank" >
 
             <figure className="">
               <StaticImage
-                src="../images/crelan_foundation.png"
+                src="https://res.cloudinary.com/liono/image/upload/v1651736961/Interra/201711_logo_cera-300px_0_upwcu9.png"
                 height={70}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt="Logo Crelan Foundation"
+                alt="Logo Cera "
               />      </figure>
           </a>
 
