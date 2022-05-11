@@ -114,7 +114,7 @@ const NavbarLinks = () => {
               </ul>
             </div>
           </li>
-          <Link to="/agenda" className="hidden">
+          <Link to="/agenda" className="">
           <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 "> Agenda </li>
           </Link>
           <li className="text-center mb-2">
