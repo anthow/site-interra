@@ -99,13 +99,13 @@ const NavbarLinks = () => {
               </button>
               <ul class="dropdown-menu absolute hidden z-50 bg-white  text-gray-700  p-4 pt-3">
                 <Link to="/inter-act">
-                  <li className="hover:text-yellow-500 text-center mb-2 "> Inter-act</li>
+                  <li className="hover:text-yellow-500 text-center mb-2 "> InterAct</li>
                 </Link>
                 <Link to="/duo2change">
                   <li className="hover:text-yellow-500 text-center mb-2 "> Duo2Change </li>
                 </Link>
                 <Link to="/interlab">
-                  <li className="hover:text-yellow-500 text-center mb-2"> Interlab </li>
+                  <li className="hover:text-yellow-500 text-center mb-2"> InterLab </li>
                 </Link>
                 <Link to="/formation-interculturelle">
                   <li className="hover:text-yellow-500 text-center mb-2"> Formation Interculturelle </li>
