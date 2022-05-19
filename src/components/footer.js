@@ -93,11 +93,25 @@ const Footer = () => (
         </li>
 
         <li className="self-center">
-          <a href="https://vivre-ensemble.be/" rel="noreferrer" target="_blank" >
+          <a href="https://www.kbs-frb.be/fr" rel="noreferrer" target="_blank" >
 
             <figure className="">
               <StaticImage
-                src="../images/vivreensemble.png"
+                src="https://res.cloudinary.com/liono/image/upload/v1652942354/Interra/frb_yltosy.jpg"
+                height={70}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt="Logo Vivre Ensemble"
+              />      </figure>
+          </a>
+
+        </li>
+        <li className="self-center">
+          <a href="https://www.sdworx.be/fr-be" rel="noreferrer" target="_blank" >
+
+            <figure className="">
+              <StaticImage
+                src="https://res.cloudinary.com/liono/image/upload/v1652943546/Interra/sdworx_v6tifz.jpg"
                 height={70}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
