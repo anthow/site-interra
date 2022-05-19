@@ -9,7 +9,7 @@ const Footer = () => (
 <p className="text-vert-interra text-lg font-black">
       Avec le soutien de  <br />
 </p>
-      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 md:gap-y-10 items-center">
+      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 gap-y-5 md:gap-y-10 items-center">
 
         <li className="self-center">
           <a href="https://www.wallonie.be/fr" rel="noreferrer" target="_blank" >
