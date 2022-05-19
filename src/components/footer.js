@@ -7,9 +7,9 @@ const Footer = () => (
      <section className=" w-10/12 mb-10  pb-5   flex flex-col md:flex-row items-center justify-center gap-x-20 m-auto ">
 
 <p className="text-vert-interra text-lg font-black">
-      Avec le soutien de : <br />
+      Avec le soutien de  <br />
 </p>
-      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 items-center">
+      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 md:gap-y-10 items-center">
 
         <li className="self-center">
           <a href="https://www.wallonie.be/fr" rel="noreferrer" target="_blank" >
