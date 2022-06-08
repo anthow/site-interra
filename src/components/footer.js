@@ -1,6 +1,7 @@
 import * as React from "react"
 import Newsletter from "./forms/newsletter"
 import { StaticImage } from "gatsby-plugin-image"
+import SlideFooter from "./silders/silder-footer"
 
 const Footer = () => (
   <footer className="mt-20  "  >
@@ -9,119 +10,7 @@ const Footer = () => (
 <p className="text-vert-interra text-lg font-black">
       Avec le soutien de  <br />
 </p>
-      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 gap-y-5 md:gap-y-10 items-center">
-
-        <li className="self-center">
-          <a href="https://www.wallonie.be/fr" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="../images/wallonie_v.png"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                objectFit="cover"
-                alt="Logo Wallonie"
-              />      </figure>
-          </a>
-
-        </li>
-
-        <li className="self-center">
-          <a href="http://www.federation-wallonie-bruxelles.be" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="../images/FWB_VERTI_RVB.png"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                objectFit="cover"
-
-                alt="Logo Fédération Wallonie/Bruxelles"
-              />      </figure>
-          </a>
-
-        </li>
-
-        <li className="self-center">
-          <a href="https://www.provincedeliege.be" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="../images/provincedeliege.png"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                objectFit="cover"
-
-                alt="Logo Province de Liège"
-              />      </figure>
-          </a>
-
-        </li>
-
-        <li className="self-center">
-          <a href="https://www.liege.be" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="../images/villedeliege.png"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                objectFit="contain"
-                alt="Logo ville de Liège"
-              />      </figure>
-          </a>
-
-        </li>
-
-        <li className="self-center">
-          <a href="https://www.cera.coop/fr/Particuliers" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="https://res.cloudinary.com/liono/image/upload/v1651736961/Interra/201711_logo_cera-300px_0_upwcu9.png"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Logo Cera "
-              />      </figure>
-          </a>
-
-        </li>
-
-        <li className="self-center">
-          <a href="https://www.kbs-frb.be/fr" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="https://res.cloudinary.com/liono/image/upload/v1652942354/Interra/frb_yltosy.jpg"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Logo Vivre Ensemble"
-              />      </figure>
-          </a>
-
-        </li>
-        <li className="self-center">
-          <a href="https://www.sdworx.be/fr-be" rel="noreferrer" target="_blank" >
-
-            <figure className="">
-              <StaticImage
-                src="https://res.cloudinary.com/liono/image/upload/v1652943546/Interra/sdworx_v6tifz.jpg"
-                height={70}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Logo Vivre Ensemble"
-              />      </figure>
-          </a>
-
-        </li>
-
-      </ul>
+  <SlideFooter />
 </section>
     <div className="w-12/12 pt-5 bg-vert-interra ">
     <section className=" w-10/12  pb-5 border-black  flex flex-col gap-x-20 m-auto md:grid grid-cols-4">
