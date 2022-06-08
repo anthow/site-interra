@@ -7,8 +7,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import moment from "moment"
 
 const current = new Date();
-const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+//const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
 const now = moment().format('D MMM YYYY, k:mm'); // January 26th 2022, 11:59:34 am
+
 const agenda = ({ data }) => (
   <Layout className="">
     <Seo title="Agenda" />
@@ -70,7 +71,7 @@ data.allDatoCmsAgendaRegule.edges.map(({ node }) => {
           {
 
             data.allDatoCmsAgenda.edges.map(({ node }) => {
-              if (node.dateDeLVNement <= now) {
+              if (node.dateDeLVNement >= now) {
                 return (
 
                   <div className="border-2 pb-4 border-vert-interra mb-10 md:mb-0">
