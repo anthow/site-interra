@@ -13,10 +13,15 @@ body {
 
 }
 
-body,p,a {
+body,p,a,li {
   font-family: oxygen;
 
 }
+
+.paragraphe ul li{
+  list-style-type: circle;
+margin-bottom: 5px;
+margin-left: 15px;}
 
 .fullheader{
   width:100% !important

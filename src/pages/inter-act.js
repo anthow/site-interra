@@ -10,7 +10,7 @@ const Interactpage = ({ data }) => (
         <div className="w-12/12">
             <article className="w-10/12  mt-10   m-auto">
                 <h1 className="font-black text-4xl mb-10  text-vert-interra  bg-white text-center"> {data.datoCmsInterAct.titre}</h1>
-                <div className="mb-20 w-10/12 px-3 m-auto" dangerouslySetInnerHTML={{ __html: data.datoCmsInterAct.introduction }}></div>
+                <div className="mb-20 w-10/12 px-3 m-auto paragraphe" dangerouslySetInnerHTML={{ __html: data.datoCmsInterAct.introduction }}></div>
 
                 <div className="flex flex-col md:gap-y-32 gap-y-10 ">
 
