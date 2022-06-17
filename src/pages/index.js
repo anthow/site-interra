@@ -166,7 +166,7 @@ const IndexPage = ({ data }) => (
             rel="noreferrer"
             target="_blank"
           >
-            <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">
+            <button className=" hidden mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">
               {" "}
               idées concrètes{" "}
             </button>
