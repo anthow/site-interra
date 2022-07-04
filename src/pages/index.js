@@ -154,7 +154,7 @@ const IndexPage = ({ data }) => (
             }}
             className="mb-5"
           ></div>
-          <figure className=" mb-10 md:mb-0    ">
+          <figure className=" mb-10 md:mb-0 hidden   ">
             <GatsbyImage
               image={data.datoCmsAccueil.imageAiderLesMigrants.gatsbyImageData}
               alt={data.datoCmsAccueil.imageAiderLesMigrants.alt}
