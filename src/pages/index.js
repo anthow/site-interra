@@ -154,13 +154,13 @@ const IndexPage = ({ data }) => (
             }}
             className="mb-5"
           ></div>
-          <figure className=" mb-10 md:mb-0 hidden   ">
+       {/*}   <figure className=" mb-10 md:mb-0 hidden   ">
             <GatsbyImage
               image={data.datoCmsAccueil.imageAiderLesMigrants.gatsbyImageData}
               alt={data.datoCmsAccueil.imageAiderLesMigrants.alt}
               className=""
             />
-          </figure>
+          </figure>{*/}
           <a
             href="https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/"
             rel="noreferrer"
