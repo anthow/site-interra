@@ -143,6 +143,7 @@ const IndexPage = ({ data }) => (
             </button>
           </Link>
         </article>
+        {/*} 
         <article>
           <h3 className="text-lg text-orange-interra mb-2 font-semibold">
             {" "}
@@ -154,13 +155,13 @@ const IndexPage = ({ data }) => (
             }}
             className="mb-5"
           ></div>
-       {/*}   <figure className=" mb-10 md:mb-0 hidden   ">
+         <figure className=" mb-10 md:mb-0 hidden   ">
             <GatsbyImage
               image={data.datoCmsAccueil.imageAiderLesMigrants.gatsbyImageData}
               alt={data.datoCmsAccueil.imageAiderLesMigrants.alt}
               className=""
             />
-          </figure>{*/}
+          </figure>
           <a
             href="https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/"
             rel="noreferrer"
@@ -171,7 +172,7 @@ const IndexPage = ({ data }) => (
               idées concrètes{" "}
             </button>
           </a>
-        </article>
+        </article>{*/}
         <article className="flex flex-col">
           <h3 className="text-lg mb-2 text-orange-interra font-semibold">
             {" "}
