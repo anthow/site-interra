@@ -17,12 +17,7 @@ const etiquette = ({data}) => (
             <figure className=" ">
               <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteUn.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteUn.alt} className="" />
 
-            </figure>  {/*}   
-            <figure className=" ">
-              <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteDeux.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteDeux.alt} className="" />
-
-            </figure>
-{*/}
+            </figure> 
             </div>
 
             <div dangerouslySetInnerHTML={{ __html: data.datoCmsAccueil.texteTiquette }} className="mb-5"></div>
@@ -44,10 +39,7 @@ export const query = graphql`
           alt
         gatsbyImageData
       }
-      imageEtiquetteDeux {
-          alt
-        gatsbyImageData
-      }
+   
       texteTiquette
       titreTiquette
     }

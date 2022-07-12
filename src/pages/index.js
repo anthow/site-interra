@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import { GatsbyImage} from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Slidehome from "../components/silders/slider-home"
+import Informationun from "../components/informations/information-un"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -42,7 +43,7 @@ const IndexPage = ({ data }) => (
           <h2 className=" text-2xl md:text-4xl font-black text-white text-center my-5 md:mt-0 mb-5">
             {data.datoCmsAccueil.titrePartieDeux}
             <br />{" "}
-          </h2>
+          </h2>SlideFooter
           <div
             dangerouslySetInnerHTML={{
               __html: data.datoCmsAccueil.textePartieDeux,
@@ -117,91 +118,7 @@ const IndexPage = ({ data }) => (
       <h2 className=" text-2xl md:text-4xl text-vert-interra font-black mt-10 mb-5  md:my-10">
         Actus / Evenements
       </h2>
-      <div className="md:grid grid-cols-3  gap-x-5 ">
-        <article>
-          <h3 className="text-lg mb-2 text-orange-interra font-semibold">
-            {data.datoCmsAccueil.titreSAnceDInformation}{" "}
-          </h3>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: data.datoCmsAccueil.texteSAnceDInformation,
-            }}
-            className="mb-5"
-          ></div>
-
-          <figure className=" mb-10 md:mb-0    ">
-            <GatsbyImage
-              image={data.datoCmsAccueil.imageSAnceDInformation.gatsbyImageData}
-              alt={data.datoCmsAccueil.imageSAnceDInformation.alt}
-              className=""
-            />
-          </figure>
-          <Link to="/seance-d-information">
-            <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">
-              {" "}
-              Séance d'information{" "}
-            </button>
-          </Link>
-        </article>
-        {/*} 
-        <article>
-          <h3 className="text-lg text-orange-interra mb-2 font-semibold">
-            {" "}
-            {data.datoCmsAccueil.titreAiderMigrant}{" "}
-          </h3>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: data.datoCmsAccueil.texteAiderMigrant,
-            }}
-            className="mb-5"
-          ></div>
-         <figure className=" mb-10 md:mb-0 hidden   ">
-            <GatsbyImage
-              image={data.datoCmsAccueil.imageAiderLesMigrants.gatsbyImageData}
-              alt={data.datoCmsAccueil.imageAiderLesMigrants.alt}
-              className=""
-            />
-          </figure>
-          <a
-            href="https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <button className=" hidden mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">
-              {" "}
-              idées concrètes{" "}
-            </button>
-          </a>
-        </article>{*/}
-        <article className="flex flex-col">
-          <h3 className="text-lg mb-2 text-orange-interra font-semibold">
-            {" "}
-            {data.datoCmsAccueil.titreTiquette}
-          </h3>
-          <p className="mb-5">
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.datoCmsAccueil.texteTiquette,
-              }}
-              className="mb-5"
-            ></div>
-          </p>
-
-          <figure className=" ">
-            <GatsbyImage
-              image={data.datoCmsAccueil.imageEtiquetteUn.gatsbyImageData}
-              alt={data.datoCmsAccueil.imageEtiquetteUn.alt}
-              className=""
-            />
-          </figure>
-          <Link to="/etiquette">
-            <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2 w-7/12 rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">
-              {" "}
-              Commander des étiquettes{" "}
-            </button>
-          </Link>
-        </article>
-      </div>
+      <Informationun />
     </section>
     <section className="w-12/12 md:10/12  m-auto md:grid grid-cols-3 mt-10 md:mt-40 auto-cols-fr content-center">
       <div className="bg-orange-interra flex flex-col md:grid grid-cols-2 col-span-2 py-16">
@@ -306,10 +223,6 @@ export const query = graphql`
         gatsbyImageData
       }
       imageAiderLesMigrants {
-        alt
-        gatsbyImageData
-      }
-      imageEtiquetteDeux {
         alt
         gatsbyImageData
       }
