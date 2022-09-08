@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => (
           <h2 className=" text-2xl md:text-4xl font-black text-white text-center my-5 md:mt-0 mb-5">
             {data.datoCmsAccueil.titrePartieDeux}
             <br />{" "}
-          </h2>SlideFooter
+          </h2>
           <div
             dangerouslySetInnerHTML={{
               __html: data.datoCmsAccueil.textePartieDeux,
