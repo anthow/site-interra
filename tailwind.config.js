@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'vert-interra': '#6dbe7b',
         'orange-interra': '#f08e32',
+        'bleu-interra': '#124052',
 
       }
     },

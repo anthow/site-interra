@@ -17,7 +17,7 @@ const Footer = () => (
     <Newsletter className="" />
 
       <div className=" col-span-2 flex flex-col space-y-2">
-        <h3 className=" text-white text-xl font-black ">Venez-nous parler de vos envies
+        <h3 className=" text-white text-xl font-black ">Venez nous parler de vos envies
           on s'occupera du reste ! </h3>
         <p>info@interra-asbl.be</p>
 

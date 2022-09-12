@@ -47,8 +47,7 @@ const Navbox = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    margin-top:10vh;
-    padding-top:10vh;
+    margin-top:11vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
     top: 0vh;
@@ -98,7 +97,7 @@ const Navbar = () => {
 
                 <StaticImage
                     src="../../images/interra-logo-300x300.jpeg"
-                    width={100}
+                    width={70}
                     quality={95}
                     formats={["auto", "webp", "avif"]}
                     alt="Logo Interra"

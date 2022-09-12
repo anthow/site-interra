@@ -141,7 +141,7 @@ const IndexPage = ({ data }) => (
                 {" "}
                 <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
                   {" "}
-                  faire un don{" "}
+                  Faire un don{" "}
                 </button>
               </li>
             </Link>
