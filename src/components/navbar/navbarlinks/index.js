@@ -54,6 +54,19 @@ const NavbarLinks = () => {
                 />      </figure>
             </a>
           </li>
+          <li className="w-auto text-center mb-2 md:pt-1 md:mb-0 ">
+            <a href="https://www.instagram.com/_interra/?hl=fr" rel="noreferrer" target="_blank" >
+
+              <figure className="">
+                <StaticImage
+                  src="../../../images/instagram.png"
+                  width={22}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Page Instagram d'Interra"
+                />      </figure>
+            </a>
+          </li>
 
 
 
