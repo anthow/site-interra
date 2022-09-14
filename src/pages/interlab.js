@@ -23,9 +23,9 @@ const interlabPage = ({ data }) => (
 
                 </section>
                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsIncubateurInclusif.textePartieDeux }} className="paragraphe "></div>
-                <Link to="/../devenir-membre">
+               {/*} <Link to="/../devenir-membre">
                 <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> Je veux soutenir le projet </button>
-                </Link>
+</Link>{*/}
                             </article>
         </div>
     </Layout>

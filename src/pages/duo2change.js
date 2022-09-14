@@ -29,7 +29,8 @@ const Duopage = ({ data }) => (
                 </section>
                 <h2 className="font-black w-10/12 md:w-12/12 m-auto  text-3xl md:text-4xl my-10 md:my-20 text-vert-interra  bg-white text-center"> {data.datoCmsDuoLangue.titreRoleInterra}</h2>
                 <section className="md:grid grid-cols-2 flex flex-col  md:gap-y-20 mb-20">
-                    <div dangerouslySetInnerHTML={{ __html: data.datoCmsDuoLangue.listeRoleInterra }} className="bg-vert-interra text-white p-5 font-black list-duo order-2 md:order-1"></div>
+                    <div dangerouslySetInnerHTML={{ __html: data.datoCmsDuoLangue.listeRoleInterra }}
+                     className="bg-vert-interra text-white p-5  list-duo order-2 md:order-1"></div>
                     <figure>
                         <GatsbyImage image={data.datoCmsDuoLangue.imageRoleInterra.gatsbyImageData} alt={data.datoCmsDuoLangue.imageRoleInterra.alt} className="h-full order-1 md:order-2 " />
 
@@ -53,6 +54,7 @@ const Duopage = ({ data }) => (
                     </div>
                     
                 </section>
+                {/*}
                 <p className="mt-10 w-10/12 md:w-12/12 m-auto flex items-center space-x-2"> 
                         <span className="text-orange-interra font-black">
                         Outil de communication : </span>
@@ -65,12 +67,14 @@ const Duopage = ({ data }) => (
                   alt="bouton whatsapp"
                   
                 />     whatsapp
-                    </p>
+</p>{*/}
+
+{/*}
                     <div className="w-10/12 md:w-12/12 m-auto flex items-center space-x-2"> 
                     <Link to="../devenir-membre">
                     <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> 
                Participer </button></Link>
-               </div>
+</div>{*/}
             </article>
         </div>
     </Layout>

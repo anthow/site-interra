@@ -19,7 +19,7 @@ body,p,a,li {
 
 }
 
-.paragraphe ul li{
+.paragraphe ul li, .list-duo ul li{
   list-style-type: circle;
 margin-bottom: 5px;
 margin-left: 15px;}

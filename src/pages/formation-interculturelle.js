@@ -34,12 +34,12 @@ const FormationPage = ({ data }) => (
                 </section>
                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsFormationInterculturelle.texteTroisOrganiser }} className="paragraphe"></div>
 
-                <section className="flex space-x-5"> <Link to="../contact">
+                <section className="flex space-x-5">{/*} <Link to="../contact">
                 <button className=" mt-5 text-white font-black  p-1 px-2  bg-vert-interra hover:opacity-80 rounded">
-                     Contactez nous </button></Link>
-                     <Link to="../devenir-membre">
+                     Contactez nous </button></Link>{*/}
+                 {/*}    <Link to="../devenir-membre">
                 <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> 
-                Je veux soutenir le projet </button></Link>
+Je veux soutenir le projet </button></Link>{*/}
 
                 </section>
 
