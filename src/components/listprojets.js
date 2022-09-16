@@ -10,15 +10,15 @@ const Listprojet = () => {
           chapeau
           imageListeProjets {
               alt
-            gatsbyImageData
-          }
+              gatsbyImageData(width: 600, height: 400)
+            }
           titre
         }
         datoCmsIncubateurInclusif {
           chapeau
           imageListeProjets {
               alt
-            gatsbyImageData
+              gatsbyImageData(width: 600, height: 400)
           }
           titre
         }
@@ -26,7 +26,7 @@ const Listprojet = () => {
           chapeau
           imageListe {
               alt
-            gatsbyImageData
+              gatsbyImageData(width: 600, height: 400)
           }
           titre
         }
@@ -34,7 +34,7 @@ const Listprojet = () => {
           chapeau
           imageListeProjets {
               alt
-            gatsbyImageData
+              gatsbyImageData(width: 600, height: 400)
           }
           titre
         }
