@@ -19,7 +19,7 @@ const Listprojet = () => {
           imageListeProjets {
               alt
               gatsbyImageData(width: 600, height: 400)
-          }
+                }
           titre
         }
         datoCmsInterAct {
