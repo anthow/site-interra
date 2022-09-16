@@ -11,17 +11,40 @@ const Contact = ({ data }) => (
     <Seo title="Contact " />
     <div className="w-10/12 m-auto">
       <article className=" mt-10 flex flex-col space-y-20   m-auto">
-        <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center"> Contact </h1>
-        <section className="  md:grid grid-cols-3   gap-x-10 gap-y-20" >
+        <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center"> Contact </h1>     
+        <section className="  md:grid grid-cols-3 items-start mb-10  gap-x-10 gap-y-20" >
+{
+
+  data.allDatoCmsFondatrice.edges.map(({ node }) => {
+    return (
+
+      <div className="flex flex-col ">
 
 
+          <GatsbyImage image={node.photo.gatsbyImageData} alt={node.photo.alt} className="m-auto" />
+
+        <div>
+          <h2 className="font-black text-lg mt-2 text-vert-interra  text-center"> {node.nomPrNom} </h2>
+          <h3 className="font-black text-m  text-orange-interra  text-center"> {node.fonction} </h3>
+          <p className="mt-2 text-center">{node.adresseMail} <br />{node.numRoDeTLPhone}</p>
+
+        </div>
+
+      </div>
+    )
+  })}
+
+
+</section>
+
+        <section className="  md:grid grid-cols-4 items-start  gap-x-10 gap-y-20" >
 
           {
 
             data.allDatoCmsPersonneContact.edges.map(({ node }) => {
               return (
 
-                <div className="flex flex-col justify-items-center">
+                <div className="flex flex-col ">
 
 
                     <GatsbyImage image={node.photo.gatsbyImageData} alt={node.photo.alt} className="m-auto" />
@@ -130,23 +153,42 @@ const Contact = ({ data }) => (
 
 
 export const query = graphql`
-  {
-    allDatoCmsPersonneContact(sort: {fields: originalId} filter: {enLigneHorsLigne: {eq: true}})  {
-      edges {
-        node {
-          nomPrNom
-          numRoDeTLPhone
-          photo {
-            gatsbyImageData( width:250
-              height:400)
-            alt
-          }
-          adresseMail
-          fonction
+{
+  allDatoCmsPersonneContact(
+    sort: {fields: meta___firstPublishedAt, order: DESC}
+    filter: {enLigneHorsLigne: {eq: true}}
+  ) {
+    edges {
+      node {
+        nomPrNom
+        numRoDeTLPhone
+        photo {
+          gatsbyImageData(width: 250, height: 250)
+          alt
         }
+        adresseMail
+        fonction
       }
     }
   }
+  allDatoCmsFondatrice(
+    sort: {fields: meta___firstPublishedAt, order: DESC}
+    filter: {enLigneHorsLigne: {eq: true}}
+  ) {
+    edges {
+      node {
+        nomPrNom
+        numRoDeTLPhone
+        photo {
+          gatsbyImageData(width: 250, height: 250)
+          alt
+        }
+        adresseMail
+        fonction
+      }
+    }
+  }
+}
 `
 
 
