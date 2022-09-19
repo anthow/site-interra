@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Sliderpartenaire from "../components/silders/slider-partenaire"
+import Sliderpartenaire from "../components/silders/silder-partenaire/index"
 
 
 
@@ -91,10 +91,10 @@ const DecouvrirPage = ({ data }) => (
             </article>
           
 
-            <article className="w-7/12 py-5 md:py-20 m-auto" id="partenaires">
+            <article className="w-10/12 py-5 md:py-20 m-auto" id="partenaires">
                 <h1 className="font-black text-4xl mb-10 text-vert-interra  bg-white text-center">  {data.datoCmsDecouvrirInterra.titreNosPartenaires} </h1>
                 <div>
-                <figure className="idden md:block">
+                <figure className="">
 
                     <Sliderpartenaire />
                     </figure>

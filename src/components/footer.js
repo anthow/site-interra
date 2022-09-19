@@ -21,13 +21,13 @@ const Footer = () => (
           on s'occupera du reste ! </h3>
         <p>info@interra-asbl.be</p>
 
-        <ul className="flex flex-col md:flex-row md:space-x-4">
+        <ul className="flex  space-x-4">
         <li>
           <a href="https://www.facebook.com/InterraCult" rel="noreferrer" target="_blank" >
 
             <figure className="">
               <StaticImage
-                src="../../../images/facebook-header.png"
+                src="../images/facebook-header.png"
                 width={30}
                 quality={95}
                 formats={["auto", "webp", "avif"]}

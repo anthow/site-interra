@@ -3,19 +3,20 @@ import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 
-const SlideFooter = () => (
+
+const Sliderpartenaire = () => (
   <StaticQuery
   query={graphql`
   {
-    datoCmsFooter {
-          soutiens {
-            gatsbyImageData (height:170)
+    datoCmsDecouvrirInterra {
+          imagesNosPartenaires {
             alt
+            gatsbyImageData (width:250)
             customData
       }
     }
   }
-  `}
+`}
     render={data => 
 
 <>
@@ -25,7 +26,7 @@ md:grid grid-cols-6 md:gap-x-10
    gap-y-5 md:gap-y-10  ">
 
 
-{data.datoCmsFooter.soutiens.map(node => 
+{data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(node => 
         <li className=" place-self-center ">
           <a href={node.customData.url} rel="noreferrer" target="_blank" >
 
@@ -53,5 +54,5 @@ md:grid grid-cols-6 md:gap-x-10
   ></StaticQuery>
 )
 
-export default SlideFooter
+export default Sliderpartenaire
 
