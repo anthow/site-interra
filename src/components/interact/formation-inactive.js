@@ -43,7 +43,7 @@ const FormationInactive = () => {
                                     <GatsbyImage image={node.image.gatsbyImageData} alt={node.image.alt} className="h-full" />
                                 </figure>
                                 <div class="relative ">
-          <div class=" p-20">
+                                <div class=" p-10 py-24">
             <div
               class="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
               <div class="">
