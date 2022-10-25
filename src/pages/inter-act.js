@@ -7,7 +7,7 @@ import FormationInactive from "../components/interact/formation-inactive"
 
 const Interactpage = ({ data }) => (
     <Layout className="">
-        <Seo title="Inter-act" />
+        <Seo title="InterAct" />
         <div className="w-12/12">
             <article className="w-10/12  mt-10   m-auto">
                 <h1 className="font-black text-4xl mb-10  text-vert-interra  bg-white text-center"> {data.datoCmsInterAct.titre}</h1>
