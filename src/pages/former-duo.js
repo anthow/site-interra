@@ -45,7 +45,9 @@ const devenirBenevole = () => (
     <div className="flex flex-col  gap-5">
       <label>mail</label>
       <input type="mail"  name="maillocale" id="maillocale"  className="border"/>
-    <input type="submit" value="Envoyer" className="border p-1 w-max" ></input>
+    <input type="submit" value="Envoyer" className=" text-white bg-vert-interra font-black
+            p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 
+            hover:bg-white border hover:border-vert-interra w-min" ></input>
     </div>
 </form>
           </article>

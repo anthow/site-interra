@@ -14,7 +14,7 @@ const devenirBenevole = () => (
       <article className="  mt-10   m-auto">
         <form className="flex flex-col gap-10">
           <div className="flex flex-col gap-5">
-            <label>Nom</label>
+            <label className="text-orange-interra">Nom</label>
             <input
               type="text"
               name="nom"
@@ -23,7 +23,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col gap-5">
-            <label>Prénom</label>
+            <label className="text-orange-interra">Prénom</label>
             <input
               type="text"
               name="prenom"
@@ -32,7 +32,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col gap-5">
-            <label>téléphone</label>
+            <label className="text-orange-interra">téléphone</label>
             <input
               type="text"
               name="telephone"
@@ -41,7 +41,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col  gap-5">
-            <label>mail</label>
+            <label className="text-orange-interra" >mail</label>
             <input
               type="mail"
               name="mail"
@@ -49,6 +49,11 @@ const devenirBenevole = () => (
               className="border"
             />
           </div>
+          <input type="submit" value="Envoyer" className=" text-white bg-vert-interra font-black
+            p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 
+            hover:bg-white border hover:border-vert-interra w-min" >
+              
+            </input>
         </form>
       </article>
     </div>    </Layout>
