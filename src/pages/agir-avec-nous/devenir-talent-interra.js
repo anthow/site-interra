@@ -15,23 +15,23 @@ const devenirTalent = () => (
             <form className="flex flex-col gap-10">
                 <div className="flex flex-col gap-5">
                   <label className="text-orange-interra">Nom</label>
-                  <input type="text" name="nom" id="nom" className="border" />  
+                  <input type="text" name="nom" id="nom" className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra " />  
                 </div>
                 <div className="flex flex-col gap-5">
                   <label className="text-orange-interra">Prénom</label>
-                  <input type="text"  name="prenom" id="prenom" className="border" />  
+                  <input type="text"  name="prenom" id="prenom" className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra " />  
                 </div>
                 <div className="flex flex-col gap-5">
                   <label className="text-orange-interra">Téléphone</label>
-                  <input type="text"  name="telephone" id="telephone" className="border" />  
+                  <input type="text"  name="telephone" id="telephone" className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra " />  
                 </div>
                 <div className="flex flex-col  gap-5">
                   <label className="text-orange-interra">Mail</label>
-                  <input type="mail"  name="mail" id="mail"  className="border"/>  
+                  <input type="mail"  name="mail" id="mail"  className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra "/>  
                 </div>
                 <div className="flex flex-col gap-5">
                   <label className="text-orange-interra">Idée d'atelier</label>
-                  <textarea  name="idee" id="idee" className="border" />  
+                  <textarea  name="idee" id="idee" className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra " />  
                 </div>
                 <input type="submit" value="Envoyer" className=" text-white bg-vert-interra font-black
             p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 

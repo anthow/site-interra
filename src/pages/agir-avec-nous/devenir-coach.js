@@ -18,7 +18,7 @@ const devenirMembre = () => (
               type="text"
               name="nom"
               id="nom"
-              className="border"
+              className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra "
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -27,7 +27,7 @@ const devenirMembre = () => (
               type="text"
               name="prenom"
               id="prenom"
-              className="border"
+              className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra "
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -36,7 +36,7 @@ const devenirMembre = () => (
               type="text"
               name="telephone"
               id="telephone"
-              className="border"
+              className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra "
             />
           </div>
           <div className="flex flex-col  gap-5">
@@ -45,7 +45,7 @@ const devenirMembre = () => (
               type="mail"
               name="mail"
               id="mail"
-              className="border"
+              className="border bg-gray-200 hover:bg-white focus:outline focus:outline-orange-interra "
             />
           </div>
           <input type="submit" value="Envoyer" className=" text-white bg-vert-interra font-black
