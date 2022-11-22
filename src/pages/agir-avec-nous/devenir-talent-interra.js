@@ -1,6 +1,6 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 
 const devenirTalent = () => (
@@ -35,7 +35,9 @@ const devenirTalent = () => (
                 </div>
                 <input type="submit" value="Envoyer" className=" text-white bg-vert-interra font-black
             p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 
-            hover:bg-white border hover:border-vert-interra w-min" ></input>
+            hover:bg-white border hover:border-vert-interra w-min" >
+              
+            </input>
             </form>
                         
            </article>

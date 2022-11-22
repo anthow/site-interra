@@ -41,7 +41,7 @@ const Duopage = ({ data }) => (
             <p className="mt-10 text-white font-black">
               {data.datoCmsAgirAvecNou.accrocheMembre}
             </p>
-            <Link to="/devenir-talent-interra">
+            <Link to="/agir-avec-nous/devenir-talent-interra">
               <button
                 id=""
                 className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90"
@@ -69,7 +69,7 @@ const Duopage = ({ data }) => (
                 __html: data.datoCmsAgirAvecNou.texteDuoLangue,
               }}
             ></div>
-            <Link to="/former-duo">
+            <Link to="/agir-avec-nous/former-duo">
               <button className="mt-10 bg-white text-vert-interra font-black p-2 hover:opacity-90">
                 {" "}
                 Former un duo{" "}
@@ -106,7 +106,7 @@ const Duopage = ({ data }) => (
                 __html: data.datoCmsAgirAvecNou.texteTalent,
               }}
             ></div>
-            <Link to="/devenir-coah">
+            <Link to="/agir-avec-nous/devenir-coach">
               <button className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90">
                 {" "}
                 Devenir coach pour l'InterLab{" "}
@@ -130,7 +130,7 @@ const Duopage = ({ data }) => (
                 __html: data.datoCmsAgirAvecNou.texteParticiperFormation,
               }}
             ></div>
-            <Link to="/participer-formation">
+            <Link to="/agir-avec-nous/participer-formation">
               <button className="mt-10 bg-white text-vert-interra font-black p-2 hover:opacity-90">
                 {" "}
                 Participer à une formation{" "}
@@ -166,7 +166,7 @@ const Duopage = ({ data }) => (
                 __html: data.datoCmsAgirAvecNou.texteBNVole,
               }}
             ></div>
-            <Link to="/devenir-volontaire">
+            <Link to="/agir-avec-nous/devenir-volontaire">
               <button className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90">
                 {" "}
                 Devenir Volontaire{" "}
