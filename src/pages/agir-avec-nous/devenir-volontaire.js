@@ -6,15 +6,15 @@ import Seo from "../../components/seo"
 const devenirBenevole = () => (
         <Layout className="">
     <Seo title="Devenir volontaire " />
-    <div className="w-12/12">
+    <div className="mt-10 w-12/12">
       <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center">
         Devenir volontaire Interra
       </h1>
 
-      <article className="  mt-10   m-auto">
-        <form className="flex flex-col gap-10">
+      <article className="  mt-10 border p-5 rounded border-orange-interra  m-auto">
+      <form action="https://formspree.io/f/mvoyyjwy" method="post" className="flex flex-col gap-5">
           <div className="flex flex-col gap-5">
-            <label className="text-orange-interra">Nom</label>
+            <label className="text-orange-interra font-bold text-lg">Nom</label>
             <input
               type="text"
               name="nom"
@@ -23,7 +23,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col gap-5">
-            <label className="text-orange-interra">Prénom</label>
+            <label className="text-orange-interra font-bold text-lg">Prénom</label>
             <input
               type="text"
               name="prenom"
@@ -32,7 +32,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col gap-5">
-            <label className="text-orange-interra">téléphone</label>
+            <label className="text-orange-interra font-bold text-lg">téléphone</label>
             <input
               type="text"
               name="telephone"
@@ -41,7 +41,7 @@ const devenirBenevole = () => (
             />
           </div>
           <div className="flex flex-col  gap-5">
-            <label className="text-orange-interra" >mail</label>
+            <label className="text-orange-interra" >Mail</label>
             <input
               type="mail"
               name="mail"

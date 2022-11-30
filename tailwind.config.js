@@ -11,7 +11,6 @@ module.exports = {
       }
     },
   },
-  darkMode: false,
   variants: {
     extend: {
       order: ['odd'],
