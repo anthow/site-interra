@@ -32,7 +32,7 @@ const formation = () => (
             />
           </div>
           <div className="flex flex-col gap-5">
-            <label className="text-orange-interra font-bold text-lg">téléphone</label>
+            <label className="text-orange-interra font-bold text-lg">Téléphone</label>
             <input
               type="text"
               name="telephone"
@@ -41,7 +41,7 @@ const formation = () => (
             />
           </div>
           <div className="flex flex-col  gap-5">
-            <label className="text-orange-interra font-bold text-lg">mail</label>
+            <label className="text-orange-interra font-bold text-lg">Mail</label>
             <input
               type="mail"
               name="mail"

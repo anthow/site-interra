@@ -41,13 +41,13 @@ const Duopage = ({ data }) => (
             <p className="mt-10 text-white font-black">
               {data.datoCmsAgirAvecNou.accrocheMembre}
             </p>
-            <Link to="/agir-avec-nous/devenir-talent-interra">
+            <Link to="/agir-avec-nous/devenir-talent-InterAct">
               <button
                 id=""
                 className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90"
               >
                 {" "}
-                Devenir Talent{" "}
+                Devenir Talent InterAct{" "}
               </button>
             </Link>
           </div>
