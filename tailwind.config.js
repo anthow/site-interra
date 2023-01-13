@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'vert-interra': '#6dbe7b',
-        'orange-interra': '#f08e32',
-        'bleu-interra': '#124052',
+        'vert-interra': '#5FAF74',
+        'orange-interra': '#FA871C',
+        'bleu-interra': '#113A4C',
+        'jaune-interra': '#FDB516',
+        'vert-clair-interra': '#F6FFFE',
+        'orange-clair-interra': '#FFBF83',
+
 
       }
     },

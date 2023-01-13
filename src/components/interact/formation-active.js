@@ -63,7 +63,7 @@ const FormationActive = () => {
 
                 </div>
               </section>
-              <h3 className="font-black text-lg text-center p-2 mb-5 text-orange-interra"> {node.nomDeLAtelier}</h3>
+              <h3 className="font-black text-lg text-center p-2 mb-5 text-vert-interra"> {node.nomDeLAtelier}</h3>
 
             </a>
 

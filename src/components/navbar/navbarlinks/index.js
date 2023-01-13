@@ -192,25 +192,25 @@ const NavbarLinks = () => (
                 </button>
                 <ul class="dropdown-menu absolute hidden z-50 bg-white  text-gray-700  p-4 pt-3">
                   <Link to="/inter-act">
-                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg ">
+                    <li className="hover:opacity-80 text-vert-interra text-center mb-2 text-sm md:text-lg ">
                       {" "}
                       {data.datoCmsMenu.sousMenuProjetInteract}
                     </li>
                   </Link>
                   <Link to="/duo2change">
-                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg ">
+                    <li className="hover:opacity-80 text-jaune-interra text-center mb-2 text-sm md:text-lg ">
                       {" "}
                       {data.datoCmsMenu.sousMenuProjetDuo}{" "}
                     </li>
                   </Link>
                   <Link to="/interlab">
-                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
+                    <li className="hover:opacity-80 text-orange-interra  text-center mb-2 text-sm md:text-lg">
                       {" "}
                       {data.datoCmsMenu.sousMenuProjetInterlab}{" "}
                     </li>
                   </Link>
                   <Link to="/formation-interculturelle">
-                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
+                    <li className="hover:opacity-80 text-bleu-interra text-center mb-2 text-sm md:text-lg">
                       {" "}
                       {data.datoCmsMenu.sousMenuProjetFormation}{" "}
                     </li>
