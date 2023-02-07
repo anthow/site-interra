@@ -244,25 +244,25 @@ const NavbarLinks = () => (
                   </svg>
                 </button>
                 <ul class="dropdown-menu absolute hidden z-50 bg-white  text-gray-700  p-4 pt-3">
-                  <Link to="/agir-avec-nous/#Talent">
+                  <Link to="/agir-avec-nous/devenir-talent-interact">
                     <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg ">
                       {" "}
                       {data.datoCmsMenu.sousMenuAgirAvecNousDevenirTalent}{" "}
                     </li>
                   </Link>
-                  <Link to="/agir-avec-nous/#duo">
+                  <Link to="/agir-avec-nous/former-duo">
                     <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg ">
                       {" "}
                       {data.datoCmsMenu.sousMenuAgirAvecNousFormerUnduo}
                     </li>
                   </Link>
-                  <Link to="/agir-avec-nous/#coach">
+                  <Link to="/agir-avec-nous/rejoindre-interlab">
                     <li className="hover:text-yellow-500 text-center text-sm md:text-lg mb-2">
                       {" "}
                       {data.datoCmsMenu.sousMenuAgirAvecNousDevenirCoah}
                     </li>
                   </Link>
-                  <Link to="/agir-avec-nous/#formation">
+                  <Link to="/agir-avec-nous/participer-formation">
                     <li className="hover:text-yellow-500 text-center text-sm md:text-lg mb-2">
                       {" "}
                       {
@@ -270,7 +270,7 @@ const NavbarLinks = () => (
                       }{" "}
                     </li>
                   </Link>
-                  <Link to="/agir-avec-nous/#volontaire">
+                  <Link to="/agir-avec-nous/devenir-volontaire">
                     <li className="hover:text-yellow-500 text-center text-sm md:text-lg mb-2">
                       {" "}
                       {

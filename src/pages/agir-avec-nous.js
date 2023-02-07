@@ -41,7 +41,7 @@ const Duopage = ({ data }) => (
             <p className="mt-10 text-white font-black">
               {data.datoCmsAgirAvecNou.accrocheMembre}
             </p>
-            <Link to="/agir-avec-nous/devenir-talent-InterAct">
+            <Link to="/agir-avec-nous/devenir-talent-interact">
               <button
                 id=""
                 className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90"
@@ -106,10 +106,10 @@ const Duopage = ({ data }) => (
                 __html: data.datoCmsAgirAvecNou.texteTalent,
               }}
             ></div>
-            <Link to="/agir-avec-nous/devenir-coach">
+            <Link to="/agir-avec-nous/rejoindre-interlab">
               <button className="mt-10 bg-white text-orange-interra font-black p-2 hover:opacity-90">
                 {" "}
-                Devenir coach pour l'InterLab{" "}
+                Rejoindre l'InterLab{" "}
               </button>
             </Link>
           </div>
