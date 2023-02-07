@@ -71,7 +71,7 @@ const devenirMembre = () => (
                 className="mr-2"
               />
               <label for="entrepreneur">
-                Je souhaite être accompagné par l'InterLab en vue de lancer pour
+                Je souhaite être accompagné par l'InterLab en vue de lancer un
                 projet entrepreneurial
               </label>
             </div>

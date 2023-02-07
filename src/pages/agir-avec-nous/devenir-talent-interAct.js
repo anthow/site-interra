@@ -8,7 +8,7 @@ const devenirTalent = () => (
     <div className="mt-10 w-12/12">
       <h1 className="font-black text-4xl  text-vert-interra mb-10  bg-white text-center">
         {" "}
-        Devenir un talent Interra{" "}
+        Devenir un talent Interact{" "}
       </h1>
 
       <article className="  mt-10 border p-5 rounded border-orange-interra  m-auto">
