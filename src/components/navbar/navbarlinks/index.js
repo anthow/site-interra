@@ -244,7 +244,7 @@ const NavbarLinks = () => (
                   </svg>
                 </button>
                 <ul class="dropdown-menu absolute hidden z-50 bg-white  text-gray-700  p-4 pt-3">
-                  <Link to="/agir-avec-nous/devenir-talent-interact">
+                  <Link to="/agir-avec-nous/talent-interact">
                     <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg ">
                       {" "}
                       {data.datoCmsMenu.sousMenuAgirAvecNousDevenirTalent}{" "}
@@ -256,7 +256,7 @@ const NavbarLinks = () => (
                       {data.datoCmsMenu.sousMenuAgirAvecNousFormerUnduo}
                     </li>
                   </Link>
-                  <Link to="/agir-avec-nous/rejoindre-interlab">
+                  <Link to="/agir-avec-nous/interlab">
                     <li className="hover:text-yellow-500 text-center text-sm md:text-lg mb-2">
                       {" "}
                       {data.datoCmsMenu.sousMenuAgirAvecNousDevenirCoah}
