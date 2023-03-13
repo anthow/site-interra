@@ -1,14 +1,15 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import { graphql } from "gatsby"
 
 
-const devenirBenevole = () => (
+const devenirBenevole = ({ data }) => (
         <Layout className="">
     <Seo title="Devenir volontaire " />
     <div className="mt-10 w-12/12">
       <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center">
-        Devenir volontaire Interra
+        {data.datoCmsAgirAvecNou.titreBNVole}
       </h1>
 
       <article className="  mt-10 border p-5 rounded border-orange-interra  m-auto">
@@ -58,7 +59,18 @@ const devenirBenevole = () => (
       </article>
     </div>    </Layout>
 )
-
+export const query = graphql`
+  query {
+    datoCmsAgirAvecNou {
+      titreBNVole
+      titreDon
+      titreDuoLangue
+      titreMembre
+      titreTalent
+      titreParticiperFormation
+    }
+  }
+`
 
 
 export default devenirBenevole

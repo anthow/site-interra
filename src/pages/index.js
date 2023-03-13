@@ -135,35 +135,56 @@ const IndexPage = ({ data }) => (
           ></div>
         </article>
         <article className="place-self-center order-3 pb-5 md:pb-0 ">
-          <ul className="flex flex-col justify-self-right items-center m-auto content-center self-center   ">
-            <Link to="/agir-avec-nous/#don">
-              <li>
-                {" "}
-                <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
-                  {" "}
-                  Faire un don{" "}
-                </button>
-              </li>
-            </Link>
-            <Link to="/agir-avec-nous/#membre">
-              <li>
-                {" "}
-                <button className="  mt-5 text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
-                  {" "}
-                  Devenir membre{" "}
-                </button>
-              </li>
-            </Link>
-            <Link to="/agir-avec-nous/#benevole">
-              <li>
-                {" "}
-                <button className="  mt-5 text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
-                  {" "}
-                  Devenir bénévole{" "}
-                </button>
-              </li>
-            </Link>
-          </ul>
+          <ul className="flex flex-col gap-2 justify-self-right items-center m-auto content-center self-center   ">
+                  <Link to="/agir-avec-nous/talent-interact">
+                    <li>
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+                      {data.datoCmsMenu.sousMenuAgirAvecNousDevenirTalent}{" "}
+                      </button>
+                    </li>
+                  </Link>
+                  <Link to="/agir-avec-nous/former-duo">
+                    <li>
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+
+                      {data.datoCmsMenu.sousMenuAgirAvecNousFormerUnduo}
+</button>
+                    </li>
+                  </Link>
+                  <Link to="/agir-avec-nous/interlab">
+                    <li>
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+
+                      {data.datoCmsMenu.sousMenuAgirAvecNousDevenirCoah}
+                      </button>
+                    </li>
+                  </Link>
+                  <Link to="/agir-avec-nous/participer-formation">
+                    <li className="">
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+                      {
+                        data.datoCmsMenu.sousMenuAgirAvecNousParticiperFormation
+                      }</button>
+                    </li>
+                  </Link>
+                  <Link to="/agir-avec-nous/devenir-volontaire">
+                    <li>
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+                      {
+                        data.datoCmsMenu.sousMenuAgirAvecNousDevenirVolontaire
+                      }</button>
+                    </li>
+                  </Link>
+                  <Link to="/agir-avec-nous/#don">
+                    <li>
+                    <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra">
+                      {data.datoCmsMenu.sousMenuAgirAvecNousFaireDon}{" "}
+                      </button>
+                    </li>
+                  </Link>
+
+</ul>
+
         </article>
       </div>
       <article>
@@ -242,6 +263,14 @@ export const query = graphql`
         alt
         gatsbyImageData
       }
+    }
+    datoCmsMenu {
+      sousMenuAgirAvecNousDevenirCoah
+      sousMenuAgirAvecNousDevenirVolontaire
+      sousMenuAgirAvecNousDevenirTalent
+      sousMenuAgirAvecNousFaireDon
+      sousMenuAgirAvecNousFormerUnduo
+      sousMenuAgirAvecNousParticiperFormation
     }
   }
 `
