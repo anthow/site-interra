@@ -3,59 +3,70 @@
 @tailwind utilities;
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    width:200px;
-  }
-  
-  html,
+  display: block;
+  width: 200px;
+}
+
+html,
 body {
-	height: 100%;
+  height: 100%;
   font-family: oxygen;
 
 }
 
-body,p,a,li {
+body,
+p,
+a,
+li {
   font-family: oxygen;
 
 }
 
-.paragraphe ul li, .list-duo ul li{
+.paragraphe ul li,
+.list-duo ul li {
   list-style-type: circle;
-margin-bottom: 5px;
-margin-left: 15px;}
-
-.fullheader{
-  width:100% !important
+  margin-bottom: 2px;
+  margin-left: 15px;
 }
 
-.paragraphe p{
+.fullheader {
+  width: 100% !important
+}
+
+.paragraphe p {
   margin-bottom: 10px;
 }
 
+.paragraphe h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
 
-
-
-p{
+p {
   font-size: 1.05em;
 }
 
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: roboto;
 }
 
 
 
 @media only screen and (max-width: 600px) {
-  p{
+  p {
     font-size: 1em;
   }
 
   .dropdown:hover .dropdown-menu {
     display: block;
-    width:350px;
+    width: 350px;
     padding-right: 150px;
   }
 }
-
-
