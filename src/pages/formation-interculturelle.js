@@ -96,8 +96,8 @@ const FormationPage = ({ data }) => (
               className=""
             />
             </figure>
-            <div className="flex flex-col gap-5">
-            <h3 className="font-black text-xl mb-5 text-bleu-interra ">{data.datoCmsFormationInterculturelle.nomFormateurUn}</h3>
+            <div className="flex flex-col gap-2">
+            <h3 className="font-black text-xl text-bleu-interra ">{data.datoCmsFormationInterculturelle.nomFormateurUn}</h3>
 
             <div
             dangerouslySetInnerHTML={{
@@ -118,8 +118,8 @@ const FormationPage = ({ data }) => (
               className=""
             />
             </figure>
-            <div className="flex flex-col gap-5">
-            <h3 className="font-black text-xl mb-5 text-bleu-interra ">{data.datoCmsFormationInterculturelle.nomFormateurDeux}</h3>
+            <div className="flex flex-col gap-2">
+            <h3 className="font-black text-xl  text-bleu-interra ">{data.datoCmsFormationInterculturelle.nomFormateurDeux}</h3>
 
             <div
             dangerouslySetInnerHTML={{
