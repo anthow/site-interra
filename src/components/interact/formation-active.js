@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const FormationActive = () => {
@@ -22,7 +22,15 @@ const FormationActive = () => {
       }
     }
   `)
-  return <><h2 className="font-black text-3xl mb-10 text-vert-interra"> Nos prochains ateliers</h2>
+  return <>
+  
+  <section className="flex flex-col md:flex-row gap-5">
+  <h2 className="font-black text-3xl mb-10 text-vert-interra"> Nos prochains ateliers</h2>
+             <Link to="../inter-act/agenda/">
+            <p className=" text-white bg-vert-interra font-black
+            p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-vert-interra 
+            hover:bg-white border hover:border-vert-interra">Agenda</p>
+                       </Link></section>
 
     <div className="flex flex-col md:grid grid-cols-4 mb-20 gap-x-10  gap-y-10 ">
 
