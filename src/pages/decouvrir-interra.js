@@ -90,7 +90,18 @@ const DecouvrirPage = ({ data }) => (
 
             </article>
           
+            <article className="w-10/12  py-5 md:py-20 flex flex-col gap-5 m-auto " id="lexique" >
+           <section className="flex flex-col items-center gap-5 text-center">
+            <h2 className="text-2xl text-orange-interra mb-5"> 
+            {data.datoCmsDecouvrirInterra.titreLexique} </h2>
+            <div dangerouslySetInnerHTML={{ __html: data.datoCmsDecouvrirInterra.introductionLexique }} className=""></div>
 
+            </section>
+            <div dangerouslySetInnerHTML={{ __html: data.datoCmsDecouvrirInterra.texteLexique }} className="flex flex-col gap-2 paragraphe"></div>
+
+
+
+</article>
             <article className="w-10/12 py-5 md:py-20 m-auto" id="partenaires">
                 <h1 className="font-black text-4xl mb-10 text-vert-interra  bg-white text-center">  {data.datoCmsDecouvrirInterra.titreNosPartenaires} </h1>
                 <div>
@@ -143,6 +154,9 @@ export const query = graphql`
       titreQuiSommesNous
       titreValeurs
       phraseLien
+      introductionLexique
+      texteLexique
+      titreLexique
     }
   }
 `

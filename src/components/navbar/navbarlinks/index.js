@@ -20,6 +20,7 @@ const NavbarLinks = () => (
           sousMenuDecouvrirInterraMission
           sousMenuDecouvrirInterraPartenaires
           sousMenuDecouvrirInterraValeurs
+          sousMenuDecouvrirInterraLexique
           sousMenuProjetInteract
           sousMenuProjetDuo
           sousMenuProjetFormation
@@ -30,6 +31,7 @@ const NavbarLinks = () => (
           sousMenuAgirAvecNousFaireDon
           sousMenuAgirAvecNousFormerUnduo
           sousMenuAgirAvecNousParticiperFormation
+          
         }
       }
     `}
@@ -175,6 +177,12 @@ const NavbarLinks = () => (
                     <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
                       {" "}
                       {data.datoCmsMenu.sousMenuDecouvrirInterraValeurs}{" "}
+                    </li>
+                  </Link>
+                  <Link to="/decouvrir-interra/#partenaires">
+                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
+                      {" "}
+                      {data.datoCmsMenu.sousMenuDecouvrirInterraLexique}
                     </li>
                   </Link>
                   <Link to="/decouvrir-interra/#partenaires">
