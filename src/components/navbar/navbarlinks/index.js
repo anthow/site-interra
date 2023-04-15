@@ -51,11 +51,9 @@ const NavbarLinks = () => (
                 src="https://res.cloudinary.com/liono/image/upload/v1681286839/coq_jgromg.png"
                 alt="Logo Wallonie"
                 placeholder="blurred"
-                layout="fixed"
-                width={50}
                 height={50}
               />
-              <p className="font-black">prix du mérite Wallon 2022</p>
+              <p className="font-black">Prix du Mérite wallon 2022</p>
             </li>
             <li
               className="  text-white bg-bleu-interra font-black
