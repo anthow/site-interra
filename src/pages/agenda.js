@@ -12,7 +12,7 @@ const now = moment().format('D MMM YYYY, k:mm'); // January 26th 2022, 11:59:34 
 
 const agenda = ({ data }) => (
   <Layout className="">
-    <Seo title="Agenda" />
+    <Seo title="Agendas" />
     <div className="w-12/12">
       <h1 className="font-black text-4xl  text-vert-interra mb-10  bg-white text-center">Agenda </h1>
       <h1 className="font-black text-3xl text-center text-orange-interra mb-20 ">Nos événements réguliers </h1>
