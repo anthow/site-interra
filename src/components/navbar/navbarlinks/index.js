@@ -20,6 +20,7 @@ const NavbarLinks = () => (
           sousMenuDecouvrirInterraMission
           sousMenuDecouvrirInterraPartenaires
           sousMenuDecouvrirInterraValeurs
+          sousMenuDecouvrirInterraLexique
           sousMenuProjetInteract
           sousMenuProjetDuo
           sousMenuProjetFormation
@@ -30,6 +31,7 @@ const NavbarLinks = () => (
           sousMenuAgirAvecNousFaireDon
           sousMenuAgirAvecNousFormerUnduo
           sousMenuAgirAvecNousParticiperFormation
+          
         }
       }
     `}
@@ -44,6 +46,15 @@ const NavbarLinks = () => (
             className="md:items-center m-auto  md:flex md:content-start
          flex-col md:flex-row md:space-x-2"
           >
+            <li className="flex flex-row md:mr-2 items-center">
+              <StaticImage
+                src="https://res.cloudinary.com/liono/image/upload/v1681286839/coq_jgromg.png"
+                alt="Logo Wallonie"
+                placeholder="blurred"
+                height={50}
+              />
+              <p className="font-black">Prix du Mérite wallon 2022</p>
+            </li>
             <li
               className="  text-white bg-bleu-interra font-black
             p-1 px-2 mb-2 md:mb-0  rounded hover:bg-white-interra text-center hover:text-bleu-interra 
@@ -69,7 +80,7 @@ const NavbarLinks = () => (
                 Devenir Volontaire
               </li>
             </Link>
-            <li className="w-auto mb-2 md:mb-0  text-center mb-2 md:mb-0  m-auto">
+            <li className="w-auto  md:mb-0 md:pb-2  text-center mb-2 md:mb-0  m-auto">
               <a
                 href="https://api.whatsapp.com/send?phone=0032491520520"
                 rel="noreferrer"
@@ -125,7 +136,7 @@ const NavbarLinks = () => (
         </nav>
         <nav
           name="menu"
-          className="mt-5 order-1 md:order-2 mb-2 md:mb-10 md:mb-0 "
+          className="mt-2 order-1 md:order-2 mb-2 md:mb-10 md:mb-0 "
         >
           <ul className=" text-lg   flex-col md:flex-row md:flex  m-auto md:space-x-10 ">
             <Link to="/">
@@ -169,13 +180,18 @@ const NavbarLinks = () => (
                   <Link to="/decouvrir-interra/#partenaires">
                     <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
                       {" "}
+                      {data.datoCmsMenu.sousMenuDecouvrirInterraLexique}
+                    </li>
+                  </Link>
+                  <Link to="/decouvrir-interra/#partenaires">
+                    <li className="hover:text-yellow-500 text-center mb-2 text-sm md:text-lg">
+                      {" "}
                       {data.datoCmsMenu.sousMenuDecouvrirInterraPartenaires}
                     </li>
                   </Link>
                 </ul>
               </div>
             </li>
-
             <li className="text-center mb-2">
               <div class="dropdown inline-block m-auto relative">
                 <button class="text-sm md:text-lg  hover:text-yellow-500 text-center    rounded inline-flex items-center">
@@ -218,17 +234,12 @@ const NavbarLinks = () => (
                 </ul>
               </div>
             </li>
-            <a
-              href="https://www.facebook.com/InterraCult/events/?ref=page_internal"
-              target="_blanck"
-              rel="noreferer "
-              className=""
-            >
+            <Link to="/inter-act/agenda/">
               <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 text-sm md:text-lg ">
                 {" "}
                 {data.datoCmsMenu.menuPrincipalQuatreAgenda}{" "}
               </li>
-            </a>
+            </Link>{" "}
             <li className="text-center mb-2">
               <div class="dropdown inline-block relative">
                 <button class="text-sm md:text-lg  hover:text-yellow-500 text-center mb-2 md:mb-0   rounded inline-flex items-center">
@@ -287,7 +298,6 @@ const NavbarLinks = () => (
                 </ul>
               </div>
             </li>
-
             <li className="hover:text-yellow-500 text-center text-sm md:text-lg mb-2 md:mb-0">
               {" "}
               <Link to="/contact">
