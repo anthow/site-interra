@@ -1,10 +1,9 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import NavbarLinks from "./navbarlinks"
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
-
-
+import React, { useState } from "react";
+import styled from "styled-components";
+import NavbarLinks from "./navbarlinks";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+import Logo from "./navbarlinks/logo";
 
 const Navigation = styled.nav`
   display: flex;
@@ -17,13 +16,13 @@ const Navigation = styled.nav`
   @media (max-width: 768px) {
     position: fixed;
     height: 15vh;
-    padding-bottom:1vh; 
+    padding-bottom: 1vh;
     top: 0;
     left: 0;
     right: 0;
     left: 0;
   }
-`
+`;
 
 const Toggle = styled.div`
   display: none;
@@ -34,7 +33,7 @@ const Toggle = styled.div`
   @media (max-width: 768px) {
     display: flex;
   }
-`
+`;
 
 const Navbox = styled.div`
   display: flex;
@@ -47,23 +46,23 @@ const Navbox = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    margin-top:11vh;
+    margin-top: 11vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
     top: 0vh;
-    left: ${props => (props.open ? "-100%" : "0")};
-    height:100vh;
+    left: ${(props) => (props.open ? "-100%" : "0")};
+    height: 100vh;
   }
-`
+`;
 
 const Hamburger = styled.div`
   background-color: #111;
   width: 30px;
   height: 3px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   align-self: center;
   position: relative;
-  transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
+  transform: ${(props) => (props.open ? "rotate(-45deg)" : "inherit")};
 
   ::before,
   ::after {
@@ -76,23 +75,26 @@ const Hamburger = styled.div`
   }
 
   ::before {
-    transform: ${props =>
-        props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    transform: ${(props) =>
+      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
     top: -10px;
   }
 
   ::after {
-    opacity: ${props => (props.open ? "0" : "1")};
-    transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
+    opacity: ${(props) => (props.open ? "0" : "1")};
+    transform: ${(props) => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
   }
-`
+`;
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-    return (
-        <Navigation classname=" ">
-
+  return (
+    <Navigation classname=" ">
+      <Link to="/">
+        <Logo />
+      </Link>
+      {/*}
             <figure className="md:hidden">
 
                 <StaticImage
@@ -114,26 +116,24 @@ const Navbar = () => {
                 />      
                   </Link>
                 </figure>
-              
-            <Toggle
-                navbarOpen={navbarOpen}
-                onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-                {navbarOpen ? <Hamburger open /> : <Hamburger />}
-            </Toggle>
-            {navbarOpen ? (
-                <Navbox>
+    {*/}
+      <Toggle
+        navbarOpen={navbarOpen}
+        onClick={() => setNavbarOpen(!navbarOpen)}
+      >
+        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+      </Toggle>
+      {navbarOpen ? (
+        <Navbox>
+          <NavbarLinks />
+        </Navbox>
+      ) : (
+        <Navbox open>
+          <NavbarLinks />
+        </Navbox>
+      )}
+    </Navigation>
+  );
+};
 
-                    <NavbarLinks />
-                </Navbox>
-            ) : (
-                <Navbox open>
-                    <NavbarLinks />
-                </Navbox>
-            )}
-
-        </Navigation>
-    )
-}
-
-export default Navbar
+export default Navbar;

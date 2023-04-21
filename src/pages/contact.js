@@ -12,7 +12,7 @@ const Contact = ({ data }) => (
     <div className="w-10/12 m-auto">
       <article className=" mt-10 flex flex-col space-y-20   m-auto">
         <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center"> Contact </h1>     
-        <section className="  md:grid grid-cols-3 items-start mb-10  gap-x-10 gap-y-20" >
+        <section className="  md:grid grid-cols-2 items-center m-auto mb-10  gap-x-20 gap-y-20" >
 {
 
   data.allDatoCmsFondatrice.edges.map(({ node }) => {
