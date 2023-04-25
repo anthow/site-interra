@@ -81,9 +81,9 @@ const NavbarLinks = () => (
                 Devenir Volontaire
               </li>
             </Link>
-            <li className="w-auto  md:mb-0 md:pb-2  text-center mb-2 md:mb-0  m-auto">
+            <li className="w-auto  pt-1 m-auto">
               <a
-                href="https://api.whatsapp.com/send?phone=+32491520520"
+                href="https://api.whatsapp.com/send?phone=32491520520"
                 rel="noreferrer"
                 target="_blank"
               >

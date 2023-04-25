@@ -18,18 +18,20 @@ const agenda = ({ data }) => (
           return (
             <>
               <section className="border flex flex-col">
-                <div className="bg-vert-interra text-center p-2 text-xl text-white font-black">
-                  Le {node.dateDeLVNement}
+                <div className="bg-vert-interra text-center p-2 text-m text-white font-black">
+                   {node.dateDeLVNement}
                 </div>
                 <GatsbyImage
                   image={node.atelier.image.gatsbyImageData}
                   alt={node.atelier.image.alt}
-                  className="h-full w-full mb-4"
+                  className=" mb-4"
                 />
-                <div className="flex flex-col gap-2 px-2 mb-4">
-                  <h2 className="text-white bg-vert-interra w-full px-2  text-lg">
+                <div className="flex flex-col gap-5 px-2 mb-4 content-center">
+                  <div className=" text-white bg-vert-interra w-full flex flex-col m-auto  px-2 mb-2 h-16 text-center content-center text-lg">
+                  <h2 className="">
                     {node.atelier.nomDeLAtelier}
                   </h2>
+                  </div>
                   <p> par {node.atelier.organisateur}</p>{" "}
                   <a href={node.lienUrl} target="_blank" rel="noopener" className="underline text-vert-interra">{node.texteUrl}</a>
                   <p>
@@ -40,10 +42,10 @@ const agenda = ({ data }) => (
             ></div>
                     </p>
                   <div className="flex flex-row ">
-                    <p className="text-vert-interra mr-2">réservation:</p> 
+                    <p className="text-vert-interra mr-2">Inscription:</p> 
                     <span className="w-auto ">
               <a
-                href="https://api.whatsapp.com/send?phone=+32491520520"
+                href="https://api.whatsapp.com/send?phone=32491520520"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -71,14 +73,14 @@ export const query = graphql`
           texteLieu
           texteUrl
           lienUrl
-          dateDeLVNement(formatString: " D MMMM YYYY à k:mm", locale: "fr")
+          dateDeLVNement(formatString: " dddd D MMMM YYYY à k:mm", locale: "fr")
           atelier {
             nomDeLAtelier
        
             organisateur
             image {
               alt
-              gatsbyImageData
+              gatsbyImageData (width:400, height:400)
             }
           }
         }
