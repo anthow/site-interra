@@ -43,7 +43,7 @@ const agenda = ({ data }) => (
                     <p className="text-vert-interra mr-2">réservation:</p> 
                     <span className="w-auto ">
               <a
-                href="https://api.whatsapp.com/send?phone=0032491520520"
+                href="https://api.whatsapp.com/send?phone=+32491520520"
                 rel="noreferrer"
                 target="_blank"
               >
