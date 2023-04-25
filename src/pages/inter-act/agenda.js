@@ -27,13 +27,21 @@ const agenda = ({ data }) => (
                   className="h-full w-full mb-4"
                 />
                 <div className="flex flex-col gap-2 px-2 mb-4">
-                  <h2 className="text-white bg-vert-interra w-max px-2  text-lg">
+                  <h2 className="text-white bg-vert-interra w-full px-2  text-lg">
                     {node.atelier.nomDeLAtelier}
                   </h2>
                   <p> par {node.atelier.organisateur}</p>{" "}
+                  <a href={node.lienUrl} target="_blank" rel="noopener" className="underline text-vert-interra">{node.texteUrl}</a>
+                  <p>
+                  <div
+              dangerouslySetInnerHTML={{
+                __html: node.texteLieu,
+              }}
+            ></div>
+                    </p>
                   <div className="flex flex-row ">
-                    <p className="text-vert-interra">réservation:</p> 
-                    <span className="w-auto    m-auto">
+                    <p className="text-vert-interra mr-2">réservation:</p> 
+                    <span className="w-auto ">
               <a
                 href="https://api.whatsapp.com/send?phone=0032491520520"
                 rel="noreferrer"
@@ -60,9 +68,13 @@ export const query = graphql`
     allDatoCmsAgenda(sort: { order: ASC, fields: dateDeLVNement }) {
       edges {
         node {
+          texteLieu
+          texteUrl
+          lienUrl
           dateDeLVNement(formatString: " D MMMM YYYY à k:mm", locale: "fr")
           atelier {
             nomDeLAtelier
+       
             organisateur
             image {
               alt
