@@ -83,7 +83,7 @@ const NavbarLinks = () => (
             </Link>
             <li className="w-auto  md:mb-0 md:pb-2  text-center mb-2 md:mb-0  m-auto">
               <a
-                href="https://api.whatsapp.com/send?phone=0032491520520"
+                href="https://api.whatsapp.com/send?phone=+32491520520"
                 rel="noreferrer"
                 target="_blank"
               >
