@@ -27,7 +27,7 @@ const agenda = ({ data }) => (
                   className=" mb-4"
                 />
                 <div className="flex flex-col gap-5 px-2 mb-4 content-center">
-                  <div className=" text-white bg-vert-interra w-full flex flex-col m-auto  px-2 mb-2 h-16 text-center content-center text-lg">
+                  <div className=" text-white bg-vert-interra w-full flex flex-col m-auto  px-2 mb-2  text-center content-center text-lg">
                   <h2 className="">
                     {node.atelier.nomDeLAtelier}
                   </h2>
@@ -41,6 +41,7 @@ const agenda = ({ data }) => (
               }}
             ></div>
                     </p>
+                    <div className="flex flex-col gap-2">
                   <div className="flex flex-row ">
                     <p className="text-vert-interra mr-2">Inscription:</p> 
                     <span className="w-auto ">
@@ -55,6 +56,8 @@ const agenda = ({ data }) => (
               </a>
             </span>
 
+            </div>
+            <p className="underline text-vert-interra"> {node.numeroDeTelephone}</p>
                   </div>
                 </div>
               </section>
@@ -70,12 +73,14 @@ export const query = graphql`
     allDatoCmsAgenda(sort: { order: ASC, fields: dateDeLVNement }) {
       edges {
         node {
+          numeroDeTelephone
           texteLieu
           texteUrl
           lienUrl
           dateDeLVNement(formatString: " dddd D MMMM YYYY à k:mm", locale: "fr")
           atelier {
             nomDeLAtelier
+            
        
             organisateur
             image {
