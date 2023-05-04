@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import * as React from "react"
 
 const Newsletter = () => (
-  <section className="col-span-2 flex flex-col place-content-center content-center place-items-start " >
+  <section className=" flex flex-col place-content-center content-center place-items-start " >
    
                     <h2 className="text-white text-xl font-black mb-5">Envie de rester informé(e) ?</h2>
                     <Link to="../../newsletter">

@@ -13,10 +13,17 @@ const Footer = () => (
   <SlideFooter />
 </section>
     <div className="w-12/12 pt-5 bg-vert-interra ">
-    <section className=" w-10/12  pb-5 border-black  flex flex-col gap-x-20 m-auto md:grid grid-cols-4">
+    <section className=" w-10/12  pb-5 border-black  flex flex-col gap-x-20 m-auto md:grid grid-cols-3">
     <Newsletter className="" />
+    <div className="  flex flex-col gap-2">
+    <h3 className=" text-white text-xl font-black ">Interra ASBL </h3>
+    <p>Rue des Brasseurs, 8 à 4000 Liège </p>
+    <p>Num.Ent. : 0726.976.002</p>
+    <p>RPM Liège</p>
+    <p> N°Compte : BE65 1030 6350 8796</p>
+</div>
 
-      <div className=" col-span-2 flex flex-col space-y-2">
+      <div className="  flex flex-col space-y-2">
         <h3 className=" text-white text-xl font-black ">Venez nous parler de vos envies
           on s'occupera du reste ! </h3>
         <p>info@interra-asbl.be</p>
@@ -75,6 +82,8 @@ const Footer = () => (
         </li>
         <li className="text-xs">
           Politique de confidentalités</li>
+          <li className="text-xs">
+          site réalisé par <a href="https://liono.be/" target="_blank" rel="noopener">Liono</a> </li>
       </ul>
       
     </section>
