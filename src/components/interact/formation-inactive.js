@@ -84,4 +84,3 @@ const FormationInactive = () => {
 }
 
 export default FormationInactive
-

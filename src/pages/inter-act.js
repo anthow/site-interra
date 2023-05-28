@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FormationActive from "../components/interact/formation-active"
-import FormationInactive from "../components/interact/formation-inactive"
+//import FormationInactive from "../components/interact/formation-inactive"
 
 const Interactpage = ({ data }) => (
     <Layout className="">
@@ -14,7 +14,7 @@ const Interactpage = ({ data }) => (
                
                 <div className="mb-20 w-10/12 px-3 m-auto paragraphe" dangerouslySetInnerHTML={{ __html: data.datoCmsInterAct.introduction }}></div>
           <FormationActive/>
-          <FormationInactive />
+         {/*} <FormationInactive />{*/}
        
             </article>
       
