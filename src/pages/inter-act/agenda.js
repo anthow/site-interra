@@ -14,12 +14,12 @@ const agenda = ({ data }) => (
         Agenda
       </h1>
       <article className="flex flex-col gap-10 md:grid grid-cols-4">
-        {data.allDatoCmsAgenda.edges.map(({ node }) => {
+        {data.allContentfulInteractAgenda.edges.map(({ node }) => {
           return (
             <>
               <section className="border flex flex-col">
                 <div className="bg-vert-interra text-center p-2 text-m text-white font-black">
-                   {node.dateDeLVNement}
+                   {node.dateDeLvnement}
                 </div>
                 <GatsbyImage
                   image={node.atelier.image.gatsbyImageData}
@@ -29,7 +29,7 @@ const agenda = ({ data }) => (
                 <div className="flex flex-col gap-5 px-2 mb-4 content-center">
                   <div className=" text-white bg-vert-interra w-full flex flex-col m-auto  px-2 mb-2  text-center content-center text-lg">
                   <h2 className="">
-                    {node.atelier.nomDeLAtelier}
+                    {node.atelier.nomDeLatelier}
                   </h2>
                   </div>
                   <p> par {node.atelier.organisateur}</p>{" "}
@@ -37,7 +37,7 @@ const agenda = ({ data }) => (
                   <p>
                   <div
               dangerouslySetInnerHTML={{
-                __html: node.texteLieu,
+                __html: node.texteLieu.texteLieu,
               }}
             ></div>
                     </p>
@@ -57,7 +57,7 @@ const agenda = ({ data }) => (
             </span>
 
             </div>
-            <p className="underline text-vert-interra"> {node.numeroDeTelephone}</p>
+            <p className="underline text-vert-interra"> {node.numroDeTlphone}</p>
                   </div>
                 </div>
               </section>
@@ -70,22 +70,19 @@ const agenda = ({ data }) => (
 );
 export const query = graphql`
   query {
-    allDatoCmsAgenda(sort: { order: ASC, fields: dateDeLVNement }) {
+    allContentfulInteractAgenda(sort: { order: ASC, fields: dateDeLvnement }) {
       edges {
         node {
-          numeroDeTelephone
-          texteLieu
+          numroDeTlphone
+          texteLieu{texteLieu}
           texteUrl
           lienUrl
-          dateDeLVNement(formatString: " dddd D MMMM YYYY à k:mm", locale: "fr")
+          dateDeLvnement(formatString: " dddd D MMMM YYYY à k:mm", locale: "fr")
           atelier {
-            nomDeLAtelier
-            
-       
+            nomDeLatelier
             organisateur
             image {
-              alt
-              gatsbyImageData (width:400, height:400)
+              gatsbyImageData (height:300, width:300)
             }
           }
         }

@@ -15,7 +15,13 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-preload-fonts`,
     'gatsby-plugin-robots-txt',
-
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        "accessToken": "p80WLxedAVZy48yZ_h7yEnxJYzxlzI-y-tBiKiUERlc",
+        "spaceId": "t0kynlkq1wsw"
+      }
+    },
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {

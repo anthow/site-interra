@@ -1,22 +1,22 @@
-import React from "react"
+  import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const FormationActive = () => {
   const data = useStaticQuery(graphql`
     query {
-      allDatoCmsAtelier(filter: {inactifActif: {eq: true}}) {
+      allContentfulInteractAteliers(filter: {inactifactif: {eq: true}}) {
         edges {
           node {
-            inactifActif
+            inactifactif
             image {
               gatsbyImageData(aspectRatio: 1.1)
-              alt
+              description
             }
-            nomDeLAtelier
+            nomDeLatelier
             organisateur
-            presentationAtelier
-            urlAtelier
+            presentationAtelier{presentationAtelier}
+           
           }
         }
       }
@@ -37,18 +37,16 @@ const FormationActive = () => {
 
       {
 
-        data.allDatoCmsAtelier.edges.map(({ node }) => {
+        data.allContentfulInteractAteliers.edges.map(({ node }) => {
           return (<>
-            <a href={node.urlAtelier} target="blank"
-              rel="noreferrer"
-              className="">
-              <section className="  gap-x-10 flex flex-col gap-y-5 md:gap-y-0  ">
+          
+              <section className=" gap-x-10 flex flex-col gap-y-5 md:gap-y-0  ">
 
                 <div className="relative block  bg-vert-interra group">
 
                   <figure className="md:justify-self-center absolute
                                  inset-0 object-cover w-full h-full group-hover:opacity-50">
-                    <GatsbyImage image={node.image.gatsbyImageData} alt={node.image.alt} className="h-full w-full" />
+                    <GatsbyImage image={node.image.gatsbyImageData} alt={node.image.description} className="h-full w-full" />
                   </figure>
                   <div class="relative ">
                     <div class=" p-10 py-24">
@@ -66,14 +64,13 @@ const FormationActive = () => {
                 </div>
                 <div>
                   {/*}<h2 className="font-black text-3xl mb-2 text-vert-interra"> {node.organisateur}</h2>{*/}
-                  {/*}<div dangerouslySetInnerHTML={{ __html: node.presentationAtelier }}></div>{*/}
+                  {/*}<div dangerouslySetInnerHTML={{ __html: node.presentationAtelier.presentationAtelier }}></div>{*/}
 
 
                 </div>
+              <h3 className="font-black text-lg text-center p-2 mb-5 text-vert-interra"> {node.nomDeLatelier}</h3>
               </section>
-              <h3 className="font-black text-lg text-center p-2 mb-5 text-vert-interra"> {node.nomDeLAtelier}</h3>
 
-            </a>
 
           </>
 
