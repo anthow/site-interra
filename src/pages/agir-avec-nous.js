@@ -1,13 +1,11 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import Seo from "../components/seo";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 const Duopage = ({ data }) => (
   <Layout className="">
-    <Seo title="Agir avec nous " />
     <div className="w-12/12">
       <h1
         className="font-black  text-4xl md:-mb-20  text-vert-interra  bg-white text-center"
@@ -245,19 +243,7 @@ export const query = graphql`
       titreDuoLangue
       titreMembre
       titreTalent
-      seoMetaTags {
-        internal {
-          content
-          contentDigest
-          description
-          fieldOwners
-          ignoreType
-          mediaType
-          owner
-          type
-        }
-        tags
-      }
+      
     }
   }
 `;
