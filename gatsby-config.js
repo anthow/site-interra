@@ -29,6 +29,8 @@ module.exports = {
       }
     },
 
+
+    
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
