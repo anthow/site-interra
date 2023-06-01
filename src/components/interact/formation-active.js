@@ -15,7 +15,7 @@ const FormationActive = () => {
             }
             nomDeLatelier
             organisateur
-          }
+        }
         }
       }
     }
@@ -62,7 +62,6 @@ const FormationActive = () => {
                 </div>
                 <div>
                   {/*}<h2 className="font-black text-3xl mb-2 text-vert-interra"> {node.organisateur}</h2>{*/}
-                  {/*}<div dangerouslySetInnerHTML={{ __html: node.presentationAtelier.presentationAtelier }}></div>{*/}
 
 
                 </div>

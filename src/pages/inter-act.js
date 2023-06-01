@@ -28,20 +28,6 @@ export const query = graphql`
       introduction
       titre
     }
-    allDatoCmsAtelier (sort: {fields: id, order: ASC}) {
-        edges {
-          node {
-            image {
-              gatsbyImageData
-              (aspectRatio: 1.1)
-              alt
-            }
-            nomDeLAtelier
-            organisateur
-            presentationAtelier
-          }
-        }
-      }
   }
 `
 
