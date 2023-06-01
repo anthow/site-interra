@@ -126,7 +126,7 @@ const FormationPage = ({ data }) => (
             dangerouslySetInnerHTML={{
               __html: data.datoCmsFormationInterculturelle.texteFormateurDeux,
             }}
-            className="paragraphe"
+            className="paragraphe sd"
           ></div>
             </div>
 </section>
