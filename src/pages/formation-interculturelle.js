@@ -84,7 +84,8 @@ const FormationPage = ({ data }) => (
 
 
        <h2 className="font-black text-3xl text-center mb-10 text-bleu-interra"> Les coachs</h2> 
-    <section className="  md:grid grid-cols-2 mb-10 flex flex-col gap-x-10 gap-y-10 md:gap-y-20">
+      {/*}
+ <section className="  md:grid grid-cols-2 mb-10 flex flex-col gap-x-10 gap-y-10 md:gap-y-20">
     <section className="md:grid grid-cols-2 flex flex-col gap-x-10 gap-y-5 ">
     <figure>
             <GatsbyImage
@@ -139,7 +140,8 @@ const FormationPage = ({ data }) => (
               alt={data.datoCmsFormationInterculturelle.imageFormateurs.alt}
               className=""
             />
-  </figure>
+  </figure>      {*/}
+
       </article>
     </div>
   </Layout>
